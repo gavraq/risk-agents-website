@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -44,29 +45,48 @@ export default function AboutPage() {
                 <div className="flex items-start gap-4">
                   <div className="text-2xl">🏦</div>
                   <div>
-                    <h4 className="text-lg font-bold text-slate-50">Barclays (UK)</h4>
-                    <p className="text-slate-400">Risk operations, Basel II/III implementation, target operating model</p>
+                    <h4 className="text-lg font-bold text-slate-50">ICBC Standard Bank</h4>
+                    <p className="text-slate-400 text-sm">Head of Risk Infrastructure (2021-Present)</p>
+                    <p className="text-slate-400">Leading Risk Reporting team and Risk Change initiatives</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="text-2xl">🏦</div>
                   <div>
-                    <h4 className="text-lg font-bold text-slate-50">Deutsche Bank (London)</h4>
-                    <p className="text-slate-400">Risk infrastructure, policies & procedures, operational efficiency</p>
+                    <h4 className="text-lg font-bold text-slate-50">Barclays Bank</h4>
+                    <p className="text-slate-400 text-sm">Global Head Market & Credit Risk Infrastructure (2008-2013)</p>
+                    <p className="text-slate-400">Led team of ~300 people, harmonized risk management infrastructure</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="text-2xl">🏦</div>
                   <div>
-                    <h4 className="text-lg font-bold text-slate-50">ICBC Standard Bank (London)</h4>
-                    <p className="text-slate-400">Chief Operating Officer (Risk), complete function transformation</p>
+                    <h4 className="text-lg font-bold text-slate-50">Deutsche Bank</h4>
+                    <p className="text-slate-400 text-sm">COO Market Risk Management (2001-2008)</p>
+                    <p className="text-slate-400">Managed all support activities for Market Risk Management function</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="text-2xl">🏦</div>
+                  <div>
+                    <h4 className="text-lg font-bold text-slate-50">Nordea Bank</h4>
+                    <p className="text-slate-400 text-sm">Head of Trading & Risk Programme (2016-2019)</p>
+                    <p className="text-slate-400">Led cultural transformation of trading business</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
-              <div className="text-6xl mb-6 text-center">👨‍💼</div>
+              <div className="flex justify-center mb-6">
+                <Image
+                  src="/images/gavin-avatar.png"
+                  alt="Gavin Slater"
+                  width={128}
+                  height={128}
+                  className="rounded-full"
+                />
+              </div>
               <h3 className="text-2xl font-bold text-slate-50 mb-4 text-center">
                 Gavin Slater
               </h3>
@@ -76,23 +96,23 @@ export default function AboutPage() {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                  <span className="text-slate-300">30 years banking risk operations</span>
+                  <span className="text-slate-300">30 years building risk infrastructure & operations</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-amber-400"></div>
-                  <span className="text-slate-300">COO (Risk) at global investment banks</span>
+                  <span className="text-slate-300">Led teams of 300+ in risk transformation programs</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-green-400"></div>
-                  <span className="text-slate-300">Built operating models, infrastructure, and transformation programs</span>
+                  <span className="text-slate-300">Head of Risk Infrastructure at ICBC Standard Bank</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                  <span className="text-slate-300">Expert in policies, procedures, and risk frameworks</span>
+                  <span className="text-slate-300">Former COO Market Risk at Deutsche Bank</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-amber-400"></div>
-                  <span className="text-slate-300">Now building AI-powered risk operations platform</span>
+                  <span className="text-slate-300">Specialist in target operating models & change delivery</span>
                 </div>
               </div>
               <div className="mt-8 text-center">
