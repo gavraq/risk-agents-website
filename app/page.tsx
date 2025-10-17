@@ -1,8 +1,12 @@
+import Navigation from './components/Navigation';
+
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Navigation />
+
       {/* Hero Section */}
-      <section className="min-h-screen circuit-pattern circuit-dots flex items-center justify-center px-6 py-24">
+      <section className="min-h-screen circuit-pattern circuit-dots flex items-center justify-center px-6 py-24 pt-32">
         <div className="max-w-6xl mx-auto text-center">
           {/* Coming Soon Badge */}
           <div className="mb-8 inline-block">
