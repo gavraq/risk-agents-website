@@ -16,7 +16,7 @@ export default function AboutPage() {
           <h1 className="text-5xl md:text-7xl font-bold text-slate-50 mb-6">
             <span className="text-gradient-amber">30 Years</span>
             <br />
-            of CRO Expertise
+            of Risk Operations Expertise
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-4xl mx-auto">
@@ -38,28 +38,28 @@ export default function AboutPage() {
               </h2>
               <p className="text-lg text-slate-300 mb-6">
                 Risk Agents was created by <strong className="text-slate-50">Gavin Slater</strong>,
-                a Chief Risk Officer with 30 years of experience managing risk functions at:
+                a Chief Operating Officer within Risk with 30 years of experience building and transforming risk functions at:
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-4">
                   <div className="text-2xl">🏦</div>
                   <div>
                     <h4 className="text-lg font-bold text-slate-50">Barclays (UK)</h4>
-                    <p className="text-slate-400">Global risk management, Basel implementation</p>
+                    <p className="text-slate-400">Risk operations, Basel II/III implementation, target operating model</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="text-2xl">🏦</div>
                   <div>
                     <h4 className="text-lg font-bold text-slate-50">Deutsche Bank (London)</h4>
-                    <p className="text-slate-400">Market risk, credit risk, regulatory capital</p>
+                    <p className="text-slate-400">Risk infrastructure, policies & procedures, operational efficiency</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="text-2xl">🏦</div>
                   <div>
                     <h4 className="text-lg font-bold text-slate-50">ICBC Standard Bank (London)</h4>
-                    <p className="text-slate-400">Chief Risk Officer, complete risk transformation</p>
+                    <p className="text-slate-400">Chief Operating Officer (Risk), complete function transformation</p>
                   </div>
                 </div>
               </div>
@@ -71,28 +71,28 @@ export default function AboutPage() {
                 Gavin Slater
               </h3>
               <p className="text-slate-300 text-center mb-6">
-                Chief Risk Officer, Risk Agents Founder
+                Chief Operating Officer (Risk), Risk Agents Founder
               </p>
               <div className="space-y-3 text-sm">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                  <span className="text-slate-300">30 years banking risk management</span>
+                  <span className="text-slate-300">30 years banking risk operations</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-amber-400"></div>
-                  <span className="text-slate-300">CRO at global investment banks</span>
+                  <span className="text-slate-300">COO (Risk) at global investment banks</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-green-400"></div>
-                  <span className="text-slate-300">Led full risk function transformations</span>
+                  <span className="text-slate-300">Built operating models, infrastructure, and transformation programs</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                  <span className="text-slate-300">Expert in Basel, IFRS 9, climate risk</span>
+                  <span className="text-slate-300">Expert in policies, procedures, and risk frameworks</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-amber-400"></div>
-                  <span className="text-slate-300">Now building AI-powered risk intelligence</span>
+                  <span className="text-slate-300">Now building AI-powered risk operations platform</span>
                 </div>
               </div>
               <div className="mt-8 text-center">
@@ -416,7 +416,7 @@ export default function AboutPage() {
       <footer className="py-12 px-6 bg-slate-950 border-t border-slate-800">
         <div className="max-w-6xl mx-auto text-center text-slate-400 text-sm">
           <p>© 2025 Risk Agents. Built by <a href="https://www.gavinslater.com" className="text-blue-400 hover:text-blue-300 transition-colors">Gavin Slater</a></p>
-          <p className="mt-2">30 Years of Chief Risk Officer Expertise, Delivered by AI</p>
+          <p className="mt-2">30 Years of Risk Operations Expertise, Delivered by AI</p>
         </div>
       </footer>
     </div>
