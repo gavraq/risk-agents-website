@@ -2,8 +2,8 @@ import Navigation from '../../components/Navigation';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'How It Works: 3 C\'s Methodology - Risk Agents',
-  description: 'Learn how Risk Agents transforms risk management through the 3 C\'s: Capture, Curate, and Consult. From data collection to actionable insights.',
+  title: "How It Works: 3 C's Methodology - Risk Agents",
+  description: "Learn how Risk Agents transforms risk management through the 3 C's: Capture, Curate, and Consult. From data collection to actionable insights.",
 };
 
 export default function HowItWorks() {
