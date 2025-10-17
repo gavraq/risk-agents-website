@@ -166,7 +166,7 @@ export default function PhilosophyPage() {
                 </li>
               </ul>
               <p className="text-slate-400 text-sm">
-                Traditional systems store this in disconnected databases, documents, and people's heads.
+                Traditional systems store this in disconnected databases, documents, and people&apos;s heads.
               </p>
             </div>
 
@@ -175,7 +175,7 @@ export default function PhilosophyPage() {
                 The Risk Agents Solution
               </h3>
               <p className="text-slate-300 mb-4">
-                We use the <strong className="text-slate-50">3 C's methodology</strong>:
+                We use the <strong className="text-slate-50">3 C&apos;s methodology</strong>:
               </p>
               <ul className="space-y-3 text-slate-300 mb-6">
                 <li className="flex items-start gap-3">
@@ -196,7 +196,7 @@ export default function PhilosophyPage() {
               </p>
               <div className="mt-6">
                 <Link href="/platform/how-it-works" className="text-blue-400 hover:text-blue-300 transition-colors text-sm">
-                  Learn More About 3 C's →
+                  Learn More About 3 C&apos;s →
                 </Link>
               </div>
             </div>
@@ -208,10 +208,10 @@ export default function PhilosophyPage() {
               Key Insight: Context + Skills + Patterns = Intelligence
             </h3>
             <p className="text-slate-300">
-              Risk Agents doesn't just run calculations—it <strong className="text-slate-50">understands your organization</strong>.
-              When you ask "What's my largest single-name exposure?", it knows your organizational structure,
+              Risk Agents doesn&apos;t just run calculations—it <strong className="text-slate-50">understands your organization</strong>.
+              When you ask &ldquo;What&apos;s my largest single-name exposure?&rdquo;, it knows your organizational structure,
               your netting agreements, your collateral positions, your regulatory definitions, and your internal
-              policies. That's what makes it intelligent, not just automated.
+              policies. That&apos;s what makes it intelligent, not just automated.
             </p>
           </div>
         </div>
@@ -237,7 +237,7 @@ export default function PhilosophyPage() {
                 What is GTD?
               </h3>
               <p className="text-slate-300 mb-4">
-                <strong className="text-slate-50">Getting Things Done (GTD)</strong> is David Allen's
+                <strong className="text-slate-50">Getting Things Done (GTD)</strong> is David Allen&apos;s
                 productivity methodology based on the principle that you can only make good decisions
                 when you have clarity at all levels:
               </p>
@@ -311,7 +311,7 @@ export default function PhilosophyPage() {
               Why This Matters
             </h3>
             <p className="text-slate-300 mb-4">
-              When you ask Risk Agents to "Assess counterparty risk for XYZ Bank", it doesn't just
+              When you ask Risk Agents to &ldquo;Assess counterparty risk for XYZ Bank&rdquo;, it doesn&apos;t just
               run a calculation. It understands:
             </p>
             <ul className="grid md:grid-cols-2 gap-4 text-slate-300">
@@ -402,7 +402,7 @@ export default function PhilosophyPage() {
                     Claude as the Foundation
                   </h3>
                   <p className="text-slate-300 mb-3">
-                    We built Risk Agents on Anthropic's Claude rather than OpenAI or other LLMs.
+                    We built Risk Agents on Anthropic&apos;s Claude rather than OpenAI or other LLMs.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4 text-sm">
                     <div>
@@ -478,7 +478,7 @@ export default function PhilosophyPage() {
                       <ul className="space-y-1 text-slate-300">
                         <li>• Zero learning curve</li>
                         <li>• Handles complex, nuanced requests</li>
-                        <li>• Adapts to user's language</li>
+                        <li>• Adapts to user&apos;s language</li>
                         <li>• No UI constraints on questions</li>
                       </ul>
                     </div>
@@ -505,10 +505,10 @@ export default function PhilosophyPage() {
           <div className="text-center mb-16">
             <div className="badge-risk mb-4 inline-block">Clear Boundaries</div>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
-              What Risk Agents Doesn't Do
+              What Risk Agents Doesn&apos;t Do
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Being clear about what we're NOT building
+              Being clear about what we&apos;re NOT building
             </p>
           </div>
 
@@ -517,11 +517,11 @@ export default function PhilosophyPage() {
             <div className="bg-slate-800 rounded-2xl p-8 border border-red-500/30">
               <div className="text-4xl mb-4">❌</div>
               <h3 className="text-xl font-bold text-slate-50 mb-3">
-                We Don't Replace Your Core Systems
+                We Don&apos;t Replace Your Core Systems
               </h3>
               <p className="text-slate-300">
                 Risk Agents is not a trade booking system, general ledger, or data warehouse.
-                We integrate with your existing systems—we don't replace them. Your source of truth
+                We integrate with your existing systems—we don&apos;t replace them. Your source of truth
                 stays where it is.
               </p>
             </div>
