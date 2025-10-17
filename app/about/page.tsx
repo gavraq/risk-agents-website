@@ -20,7 +20,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-4xl mx-auto">
-            Risk Agents is built on three decades of experience managing risk at the world's
+            Risk Agents is built on three decades of experience managing risk at the world&apos;s
             largest financial institutions—now delivered through AI
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
             <div>
               <div className="badge-ai mb-6 inline-block">Built By Experience</div>
               <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
-                From Banking's Risk Frontlines to AI Innovation
+                From Banking&apos;s Risk Frontlines to AI Innovation
               </h2>
               <p className="text-lg text-slate-300 mb-6">
                 Risk Agents was created by <strong className="text-slate-50">Gavin Slater</strong>,
@@ -111,7 +111,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Problem We're Solving */}
+      {/* The Problem We&apos;re Solving */}
       <section className="py-24 px-6 bg-slate-950">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -131,7 +131,7 @@ export default function AboutPage() {
               <ul className="space-y-4 text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="text-red-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Static Reports:</strong> 50+ monthly reports that are outdated the moment they're produced</span>
+                  <span><strong className="text-slate-50">Static Reports:</strong> 50+ monthly reports that are outdated the moment they&apos;re produced</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-400 mt-1">•</span>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Siloed Knowledge:</strong> Expertise locked in individuals' heads, lost when they leave</span>
+                  <span><strong className="text-slate-50">Siloed Knowledge:</strong> Expertise locked in individuals&apos; heads, lost when they leave</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-400 mt-1">•</span>
@@ -402,9 +402,9 @@ export default function AboutPage() {
             Risk Agents is coming in 2026. Register for early access and be part of the transformation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/#early-access" className="btn-primary">
+            <Link href="/#early-access" className="btn-primary">
               Get Early Access
-            </a>
+            </Link>
             <Link href="/about/philosophy" className="btn-secondary">
               Read Our Philosophy
             </Link>

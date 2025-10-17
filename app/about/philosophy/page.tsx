@@ -529,11 +529,11 @@ export default function PhilosophyPage() {
             <div className="bg-slate-800 rounded-2xl p-8 border border-red-500/30">
               <div className="text-4xl mb-4">❌</div>
               <h3 className="text-xl font-bold text-slate-50 mb-3">
-                We Don't Make Decisions For You
+                We Don&apos;t Make Decisions For You
               </h3>
               <p className="text-slate-300">
                 Risk Agents provides analysis, insights, and recommendations—but humans make the final
-                decisions. We augment expertise, we don't replace judgment. Every analysis clearly shows
+                decisions. We augment expertise, we don&apos;t replace judgment. Every analysis clearly shows
                 its assumptions and limitations.
               </p>
             </div>
@@ -541,7 +541,7 @@ export default function PhilosophyPage() {
             <div className="bg-slate-800 rounded-2xl p-8 border border-red-500/30">
               <div className="text-4xl mb-4">❌</div>
               <h3 className="text-xl font-bold text-slate-50 mb-3">
-                We Don't Claim Perfect Accuracy
+                We Don&apos;t Claim Perfect Accuracy
               </h3>
               <p className="text-slate-300">
                 LLMs can make mistakes. We design for <strong className="text-slate-50">transparency and verification</strong>,
@@ -553,10 +553,10 @@ export default function PhilosophyPage() {
             <div className="bg-slate-800 rounded-2xl p-8 border border-red-500/30">
               <div className="text-4xl mb-4">❌</div>
               <h3 className="text-xl font-bold text-slate-50 mb-3">
-                We Don't Offer "One Size Fits All"
+                We Don&apos;t Offer &ldquo;One Size Fits All&rdquo;
               </h3>
               <p className="text-slate-300">
-                Every bank's risk function is different. Risk Agents provides skills and patterns you can
+                Every bank&apos;s risk function is different. Risk Agents provides skills and patterns you can
                 customize, not rigid workflows you must follow. Your organizational structure, policies,
                 and preferences shape how it works.
               </p>
@@ -572,7 +572,7 @@ export default function PhilosophyPage() {
           <div className="text-center mb-16">
             <div className="badge-success mb-4 inline-block">The Future</div>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
-              Where We're Headed
+              Where We&apos;re Headed
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               The long-term vision for Risk Agents
@@ -590,7 +590,7 @@ export default function PhilosophyPage() {
                 <li>• 100+ skills across 9 domains</li>
                 <li>• 75+ validated patterns</li>
                 <li>• Natural language queries</li>
-                <li>• Context management (3 C's)</li>
+                <li>• Context management (3 C&apos;s)</li>
                 <li>• Integration with core systems</li>
               </ul>
             </div>
@@ -651,9 +651,9 @@ export default function PhilosophyPage() {
             <Link href="/platform" className="btn-primary">
               Explore Platform
             </Link>
-            <a href="/#early-access" className="btn-secondary">
+            <Link href="/#early-access" className="btn-secondary">
               Get Early Access
-            </a>
+            </Link>
           </div>
         </div>
       </section>

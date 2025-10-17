@@ -242,7 +242,7 @@ export default function DomainsPage() {
                 📊 Concentration Risk Analysis
               </h3>
               <p className="text-slate-300 mb-6">
-                "Show me single-name concentrations across all portfolios with market impact analysis"
+                &ldquo;Show me single-name concentrations across all portfolios with market impact analysis&rdquo;
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
@@ -270,7 +270,7 @@ export default function DomainsPage() {
                 🌍 Climate Stress Testing
               </h3>
               <p className="text-slate-300 mb-6">
-                "Run 2°C warming scenario across all portfolios with capital impact"
+                &ldquo;Run 2°C warming scenario across all portfolios with capital impact&rdquo;
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
@@ -298,7 +298,7 @@ export default function DomainsPage() {
                 💼 M&A Risk Assessment
               </h3>
               <p className="text-slate-300 mb-6">
-                "Assess full risk profile for acquisition target XYZ Bank"
+                &ldquo;Assess full risk profile for acquisition target XYZ Bank&rdquo;
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
@@ -326,7 +326,7 @@ export default function DomainsPage() {
                 🔄 System Migration Risk
               </h3>
               <p className="text-slate-300 mb-6">
-                "Assess risk impact of migrating to new trading platform"
+                &ldquo;Assess risk impact of migrating to new trading platform&rdquo;
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
@@ -362,12 +362,12 @@ export default function DomainsPage() {
             See how 100+ skills across 9 domains can revolutionize your risk function
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/#early-access" className="btn-primary">
+            <Link href="/#early-access" className="btn-primary">
               Get Early Access
-            </a>
-            <a href="/platform" className="btn-secondary">
+            </Link>
+            <Link href="/platform" className="btn-secondary">
               Explore Platform
-            </a>
+            </Link>
           </div>
         </div>
       </section>
