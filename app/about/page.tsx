@@ -359,7 +359,7 @@ export default function AboutPage() {
                 Evolution Over Perfection
               </h3>
               <p className="text-slate-300">
-                Patterns that track success and improve over time beat static "best practices."
+                Patterns that track success and improve over time beat static &ldquo;best practices.&rdquo;
                 Risk Agents learns from every query, every pattern, every outcome.
               </p>
             </div>
