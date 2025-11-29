@@ -85,7 +85,7 @@ export default function EarlyAccessForm() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="gavin.n.slater@gmail.com"
+            placeholder="john.doe@example.com"
             required
             disabled={status === 'loading'}
             className="flex-1 px-6 py-4 bg-slate-900 border border-slate-600 rounded-lg text-slate-50 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
