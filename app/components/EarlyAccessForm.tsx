@@ -70,7 +70,7 @@ export default function EarlyAccessForm() {
             Thank you for registering!
           </h3>
           <p className="text-slate-300">
-            We'll notify you when Risk Agents launches.
+            We&apos;ll notify you when Risk Agents launches.
           </p>
         </div>
       </div>
