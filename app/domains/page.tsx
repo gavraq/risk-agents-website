@@ -47,175 +47,157 @@ export default function DomainsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {/* Credit Risk */}
-            <Link href="/domains/credit" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">💳</div>
-                <div className="badge-ai mb-4">15 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-blue-400 transition-colors">
-                  Credit Risk
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  Counterparty exposure, concentration analysis, credit ratings, collateral management, ECL calculations
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Exposure Monitoring</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Rating Models</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">ECL/IFRS 9</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">💳</div>
+              <div className="badge-ai mb-4">15 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Credit Risk
+              </h3>
+              <p className="text-slate-300 mb-6">
+                Counterparty exposure, concentration analysis, credit ratings, collateral management, ECL calculations
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Exposure Monitoring</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Rating Models</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">ECL/IFRS 9</span>
               </div>
-            </Link>
+            </div>
 
             {/* Market Risk */}
-            <Link href="/domains/market" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">📈</div>
-                <div className="badge-ai mb-4">18 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-blue-400 transition-colors">
-                  Market Risk
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  VaR, stress testing, sensitivity analysis, PV01, FX exposure, interest rate risk, scenario modeling
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">VaR/CVaR</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Greeks</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">FRTB</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">📈</div>
+              <div className="badge-ai mb-4">18 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Market Risk
+              </h3>
+              <p className="text-slate-300 mb-6">
+                VaR, stress testing, sensitivity analysis, PV01, FX exposure, interest rate risk, scenario modeling
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">VaR/CVaR</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Greeks</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">FRTB</span>
               </div>
-            </Link>
+            </div>
 
             {/* Operational Risk */}
-            <Link href="/domains/operational" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">⚙️</div>
-                <div className="badge-ai mb-4">12 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-blue-400 transition-colors">
-                  Operational Risk
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  RCSA, loss event analysis, KRIs, scenario analysis, controls testing, business continuity
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">RCSA</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">KRIs</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Loss Events</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">⚙️</div>
+              <div className="badge-ai mb-4">12 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Operational Risk
+              </h3>
+              <p className="text-slate-300 mb-6">
+                RCSA, loss event analysis, KRIs, scenario analysis, controls testing, business continuity
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">RCSA</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">KRIs</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Loss Events</span>
               </div>
-            </Link>
+            </div>
 
             {/* Liquidity Risk */}
-            <Link href="/domains/liquidity" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">💧</div>
-                <div className="badge-ai mb-4">10 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-blue-400 transition-colors">
-                  Liquidity Risk
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  Cash flow forecasting, LCR/NSFR, funding gap analysis, contingency planning, liquidity stress testing
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">LCR/NSFR</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Cash Flow</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Funding</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">💧</div>
+              <div className="badge-ai mb-4">10 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Liquidity Risk
+              </h3>
+              <p className="text-slate-300 mb-6">
+                Cash flow forecasting, LCR/NSFR, funding gap analysis, contingency planning, liquidity stress testing
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">LCR/NSFR</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Cash Flow</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Funding</span>
               </div>
-            </Link>
+            </div>
 
             {/* Model Risk */}
-            <Link href="/domains/model" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">🧮</div>
-                <div className="badge-ai mb-4">8 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-blue-400 transition-colors">
-                  Model Risk
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  Model validation, backtesting, assumption analysis, model inventory, version control, documentation
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Validation</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Backtesting</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">SR 11-7</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">🧮</div>
+              <div className="badge-ai mb-4">8 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Model Risk
+              </h3>
+              <p className="text-slate-300 mb-6">
+                Model validation, backtesting, assumption analysis, model inventory, version control, documentation
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Validation</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Backtesting</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">SR 11-7</span>
               </div>
-            </Link>
+            </div>
 
             {/* Climate Risk */}
-            <Link href="/domains/climate" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">🌍</div>
-                <div className="badge-success mb-4">9 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-green-400 transition-colors">
-                  Climate Risk
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  Physical risk assessment, transition risk, scenario analysis, carbon footprint, TCFD reporting, ESG integration
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">TCFD</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Scenarios</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">ESG</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">🌍</div>
+              <div className="badge-success mb-4">9 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Climate Risk
+              </h3>
+              <p className="text-slate-300 mb-6">
+                Physical risk assessment, transition risk, scenario analysis, carbon footprint, TCFD reporting, ESG integration
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">TCFD</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Scenarios</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">ESG</span>
               </div>
-            </Link>
+            </div>
 
             {/* Regulatory Risk */}
-            <Link href="/domains/regulatory" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">⚖️</div>
-                <div className="badge-risk mb-4">11 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-amber-400 transition-colors">
-                  Regulatory Risk
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  Compliance monitoring, regulatory change tracking, capital adequacy, ICAAP, stress testing, reporting
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Basel III/IV</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">ICAAP</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Stress Tests</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">⚖️</div>
+              <div className="badge-risk mb-4">11 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Regulatory Risk
+              </h3>
+              <p className="text-slate-300 mb-6">
+                Compliance monitoring, regulatory change tracking, capital adequacy, ICAAP, stress testing, reporting
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Basel III/IV</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">ICAAP</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Stress Tests</span>
               </div>
-            </Link>
+            </div>
 
             {/* Strategic Risk */}
-            <Link href="/domains/strategic" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">🎯</div>
-                <div className="badge-ai mb-4">7 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-blue-400 transition-colors">
-                  Strategic Risk
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  Business plan risk assessment, emerging risks, competitive analysis, M&A risk, strategic alignment
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Emerging Risks</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">M&A</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Strategy</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">🎯</div>
+              <div className="badge-ai mb-4">7 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Strategic Risk
+              </h3>
+              <p className="text-slate-300 mb-6">
+                Business plan risk assessment, emerging risks, competitive analysis, M&A risk, strategic alignment
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Emerging Risks</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">M&A</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Strategy</span>
               </div>
-            </Link>
+            </div>
 
             {/* Risk Change */}
-            <Link href="/domains/risk-change" className="group">
-              <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
-                <div className="text-5xl mb-4">🔄</div>
-                <div className="badge-success mb-4">10 Skills</div>
-                <h3 className="text-2xl font-bold text-slate-50 mb-3 group-hover:text-green-400 transition-colors">
-                  Risk Change
-                </h3>
-                <p className="text-slate-300 mb-6">
-                  Change management, transformation projects, system implementations, process improvement, organizational design
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">PMO</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Agile</span>
-                  <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Transformation</span>
-                </div>
+            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+              <div className="text-5xl mb-4">🔄</div>
+              <div className="badge-success mb-4">10 Skills</div>
+              <h3 className="text-2xl font-bold text-slate-50 mb-3">
+                Risk Change
+              </h3>
+              <p className="text-slate-300 mb-6">
+                Change management, transformation projects, system implementations, process improvement, organizational design
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">PMO</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Agile</span>
+                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Transformation</span>
               </div>
-            </Link>
+            </div>
 
           </div>
         </div>
