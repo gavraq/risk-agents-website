@@ -26,7 +26,7 @@ export default function Navigation() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div className="absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="bg-slate-800 rounded-xl border border-slate-700 shadow-lg py-2">
                   <Link href="/platform" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
                     Overview
@@ -58,7 +58,7 @@ export default function Navigation() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div className="absolute left-0 top-full pt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="bg-slate-800 rounded-xl border border-slate-700 shadow-lg py-2">
                   <Link href="/about" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
                     Our Story
