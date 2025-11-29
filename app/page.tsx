@@ -1,4 +1,5 @@
 import Navigation from './components/Navigation';
+import EarlyAccessForm from './components/EarlyAccessForm';
 
 export default function Home() {
   return (
@@ -80,7 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Temporary Early Access Section */}
+      {/* Early Access Section */}
       <section id="early-access" className="py-24 px-6 bg-slate-900">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
@@ -89,23 +90,18 @@ export default function Home() {
           <p className="text-lg text-slate-300 mb-8">
             Be the first to know when Risk Agents launches. Get exclusive early access and updates on our development progress.
           </p>
-          <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
-            <p className="text-slate-400 mb-4">
-              <span className="led-indicator led-on mr-2"></span>
-              Building the future of risk management with AI
-            </p>
-            <p className="text-sm text-slate-500">
-              Follow development updates on{" "}
-              <a
-                href="https://www.gavinslater.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
-              >
-                gavinslater.com
-              </a>
-            </p>
-          </div>
+          <EarlyAccessForm />
+          <p className="text-sm text-slate-500 mt-6">
+            Follow development updates on{" "}
+            <a
+              href="https://www.gavinslater.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              gavinslater.com
+            </a>
+          </p>
         </div>
       </section>
 
