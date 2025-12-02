@@ -183,19 +183,24 @@ export default function DomainsPage() {
             </div>
 
             {/* Risk Change */}
-            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift h-full">
+            <div className="bg-slate-800 rounded-2xl p-8 border border-violet-900/30 card-lift h-full">
               <div className="text-5xl mb-4">🔄</div>
-              <div className="badge-success mb-4">10 Skills</div>
+              <div className="badge-success mb-4">15 Skills</div>
               <h3 className="text-2xl font-bold text-slate-50 mb-3">
                 Risk Change
               </h3>
-              <p className="text-slate-300 mb-6">
-                Change management, transformation projects, system implementations, process improvement, organizational design
+              <p className="text-slate-300 mb-4">
+                Full spectrum from tactical improvements to strategic transformation—Run the Bank (RTB), Change the Bank (CTB), and strategic initiatives
               </p>
+              <div className="space-y-2 text-sm text-slate-400 mb-4">
+                <div><strong className="text-slate-300">RTB:</strong> Process fixes, documentation, BAU improvements</div>
+                <div><strong className="text-slate-300">CTB:</strong> System implementations, model development</div>
+                <div><strong className="text-slate-300">Strategic:</strong> TOM design, organizational transformation</div>
+              </div>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">PMO</span>
-                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Agile</span>
-                <span className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300">Transformation</span>
+                <span className="px-3 py-1 bg-violet-900/30 rounded-full text-xs text-violet-300">RTB</span>
+                <span className="px-3 py-1 bg-violet-900/30 rounded-full text-xs text-violet-300">CTB</span>
+                <span className="px-3 py-1 bg-violet-900/30 rounded-full text-xs text-violet-300">Strategic</span>
               </div>
             </div>
 

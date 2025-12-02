@@ -110,18 +110,6 @@ export default function EarlyAccessForm() {
           Building the future of risk management with AI
         </p>
       </form>
-
-      <p className="text-sm text-slate-500 text-center mt-4">
-        Follow development updates on{' '}
-        <a
-          href="https://www.gavinslater.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 hover:text-blue-300 transition-colors"
-        >
-          gavinslater.com
-        </a>
-      </p>
     </div>
   );
 }

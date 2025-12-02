@@ -71,17 +71,17 @@ export default function PhilosophyPage() {
             </div>
 
             <div className="bg-gradient-to-br from-green-500/10 to-transparent rounded-2xl p-8 border border-green-500/30">
-              <div className="text-5xl mb-4">💬</div>
+              <div className="text-5xl mb-4">🎯</div>
               <div className="badge-success mb-4">Innovation 3</div>
               <h3 className="text-2xl font-bold text-slate-50 mb-3">
-                Natural Language
+                GTD Goal Alignment
               </h3>
               <p className="text-slate-300 mb-4">
-                Query-based reporting replaces 50+ static reports. Ask questions in plain English,
-                get instant structured answers.
+                Connect daily tasks to strategic outcomes. David Allen&apos;s Horizons of Focus ensure
+                every action traces to organizational goals.
               </p>
-              <Link href="/platform/reporting" className="text-green-400 hover:text-green-300 transition-colors text-sm">
-                Explore Reporting →
+              <Link href="/platform/goal-alignment" className="text-green-400 hover:text-green-300 transition-colors text-sm">
+                Explore GTD →
               </Link>
             </div>
 
@@ -195,8 +195,8 @@ export default function PhilosophyPage() {
                 Every piece of information is captured once, curated continuously, and consulted instantly.
               </p>
               <div className="mt-6">
-                <Link href="/platform/how-it-works" className="text-blue-400 hover:text-blue-300 transition-colors text-sm">
-                  Learn More About 3 C&apos;s →
+                <Link href="/platform/context-engineering" className="text-blue-400 hover:text-blue-300 transition-colors text-sm">
+                  Learn About Context Engineering →
                 </Link>
               </div>
             </div>

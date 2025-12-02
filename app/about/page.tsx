@@ -11,18 +11,17 @@ export default function AboutPage() {
       <section className="min-h-[60vh] circuit-pattern circuit-dots flex items-center justify-center px-6 py-24 pt-32">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8 inline-block">
-            <span className="badge-success">Our Story</span>
+            <span className="badge-risk">The Urgency</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-slate-50 mb-6">
-            <span className="text-gradient-amber">30 Years</span>
+            AI Is Transforming Risk.
             <br />
-            of Risk Operations Expertise
+            <span className="text-gradient-amber">Don&apos;t Get Left Behind.</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-4xl mx-auto">
-            Risk Agents is built on three decades of experience managing risk at the world&apos;s
-            largest financial institutions—now delivered through AI
+            Risk Agents combines 30 years of CRO expertise with AI to help banks leap from Level 1 (chatbots) to Level 3 (managed workflows)—before competitors do.
           </p>
         </div>
       </section>
@@ -125,80 +124,6 @@ export default function AboutPage() {
                   Visit gavinslater.com →
                 </a>
               </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* The Problem We&apos;re Solving */}
-      <section className="py-24 px-6 bg-slate-950">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="badge-risk mb-4 inline-block">The Problem</div>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
-              Why Risk Management Needs Transformation
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-
-            {/* Current State Problems */}
-            <div className="bg-slate-800 rounded-2xl p-8 border border-red-500/30">
-              <h3 className="text-2xl font-bold text-red-400 mb-6 flex items-center gap-2">
-                <span>❌</span> Traditional Risk Management
-              </h3>
-              <ul className="space-y-4 text-slate-300">
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Static Reports:</strong> 50+ monthly reports that are outdated the moment they&apos;re produced</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Manual Processes:</strong> Weeks to answer ad-hoc questions, hundreds of Excel spreadsheets</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Siloed Knowledge:</strong> Expertise locked in individuals&apos; heads, lost when they leave</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">No Learning:</strong> Same mistakes repeated, no improvement in workflows over time</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Reactive:</strong> Always responding to events rather than preventing them</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Risk Agents Solution */}
-            <div className="bg-slate-800 rounded-2xl p-8 border border-green-500/30">
-              <h3 className="text-2xl font-bold text-green-400 mb-6 flex items-center gap-2">
-                <span>✅</span> Risk Agents Approach
-              </h3>
-              <ul className="space-y-4 text-slate-300">
-                <li className="flex items-start gap-3">
-                  <span className="text-green-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Natural Language:</strong> Ask questions in plain English, get instant structured answers</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-green-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Instant Analysis:</strong> Complex risk scenarios analyzed in seconds, not weeks</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-green-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Captured Expertise:</strong> 30 years of CRO knowledge embedded in every skill</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-green-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Evolving Workflows:</strong> Patterns track success and improve automatically</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-green-400 mt-1">•</span>
-                  <span><strong className="text-slate-50">Proactive:</strong> Identify emerging risks before they become problems</span>
-                </li>
-              </ul>
             </div>
 
           </div>
@@ -412,18 +337,63 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Next Steps */}
+      {/* Skills Sharing Community */}
       <section className="py-24 px-6 bg-slate-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="badge-success mb-4 inline-block">A New Model</div>
+              <h2 className="text-4xl font-bold text-slate-50 mb-6">
+                Not Just Software—A Community
+              </h2>
+              <p className="text-lg text-slate-300 mb-6">
+                Risk Agents isn&apos;t just a platform you buy. It&apos;s a community you join. Risk professionals sharing methodology (not data), building on each other&apos;s work, raising the bar across the industry.
+              </p>
+              <p className="text-slate-300 mb-6">
+                The perception that banks don&apos;t share is wrong. They lack time, not willingness. We&apos;re changing that.
+              </p>
+              <Link href="/skills-sharing" className="btn-secondary">
+                Learn About Skills Sharing
+              </Link>
+            </div>
+
+            <div className="bg-slate-800/50 rounded-2xl p-8 border border-emerald-900/30">
+              <h3 className="text-xl font-bold text-emerald-400 mb-6">Community Benefits</h3>
+              <ul className="space-y-4 text-slate-300">
+                <li className="flex items-start gap-3">
+                  <span className="text-emerald-400 mt-1">✓</span>
+                  <span><strong className="text-slate-200">Network Effects:</strong> More members = better skills for everyone</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-emerald-400 mt-1">✓</span>
+                  <span><strong className="text-slate-200">Knowledge Compounds:</strong> Unlike consultants, shared skills stay and improve</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-emerald-400 mt-1">✓</span>
+                  <span><strong className="text-slate-200">Levels the Field:</strong> Smaller banks access capabilities of larger institutions</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-emerald-400 mt-1">✓</span>
+                  <span><strong className="text-slate-200">Industry Resilience:</strong> Better risk management benefits everyone</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Next Steps */}
+      <section className="py-24 px-6 bg-slate-950">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
-            Join Us on This Journey
+            The Time to Act Is Now
           </h2>
           <p className="text-xl text-slate-300 mb-8">
-            Risk Agents is coming in 2026. Register for early access and be part of the transformation.
+            Join as a founding member to shape the platform, or register for early access to stay informed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/#early-access" className="btn-primary">
-              Get Early Access
+            <Link href="/skills-sharing/founding-members" className="btn-primary">
+              Become a Founding Member
             </Link>
             <Link href="/about/philosophy" className="btn-secondary">
               Read Our Philosophy

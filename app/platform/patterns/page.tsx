@@ -365,21 +365,38 @@ export default function FabrixPatterns() {
         </div>
       </section>
 
+      {/* Skills Sharing */}
+      <section className="py-20 px-6 bg-slate-950">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-emerald-900/20 to-blue-900/20 rounded-2xl p-8 border border-emerald-900/30 text-center">
+            <h2 className="text-2xl font-bold text-slate-50 mb-4">
+              Share Patterns Across the Community
+            </h2>
+            <p className="text-slate-300 mb-6">
+              Your successful patterns can benefit the entire community. Share methodology (not data) and benefit from patterns developed by other risk professionals.
+            </p>
+            <Link href="/skills-sharing" className="btn-secondary">
+              Learn About Skills Sharing
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-slate-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-50 mb-6">
-            Skills → Patterns → Transformation
+            Skills → Patterns → Goal Alignment
           </h2>
           <p className="text-lg text-slate-300 mb-8">
-            Individual skills are powerful. Patterns make them transformative. Evolution makes them unstoppable.
+            Skills provide capabilities. Patterns orchestrate workflows. GTD Goal Alignment ensures everything connects to strategic outcomes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/platform/skills" className="btn-secondary">
               ← Back to Skills
             </Link>
-            <Link href="/platform/reporting" className="btn-primary">
-              Natural Language Reporting →
+            <Link href="/platform/goal-alignment" className="btn-primary">
+              GTD Goal Alignment →
             </Link>
           </div>
         </div>

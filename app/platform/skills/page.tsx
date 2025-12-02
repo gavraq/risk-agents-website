@@ -200,6 +200,9 @@ export default function SkillsFramework() {
           {/* 3 C's Skills */}
           <div>
             <h3 className="text-2xl font-bold text-slate-50 mb-6">3 C&apos;s Methodology Skills (15 skills)</h3>
+            <p className="text-slate-400 mb-6">
+              These skills power our <Link href="/platform/context-engineering" className="text-blue-400 hover:text-blue-300">Context Engineering</Link> approach—the foundation for effective AI-assisted risk work.
+            </p>
             <div className="grid md:grid-cols-3 gap-6">
               {captureCurateConsult.map((item) => (
                 <div key={item.category} className="bg-slate-800 rounded-xl p-6 border border-slate-700 card-lift">
@@ -265,21 +268,52 @@ export default function SkillsFramework() {
         </div>
       </section>
 
+      {/* Skills Sharing */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-emerald-900/20 to-blue-900/20 rounded-2xl p-8 border border-emerald-900/30 text-center">
+            <h2 className="text-2xl font-bold text-slate-50 mb-4">
+              Share Skills Across the Community
+            </h2>
+            <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
+              Skills are designed for sharing. Contribute your non-proprietary methodologies to the community, and benefit from skills developed by risk professionals across the industry.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mb-8 text-left">
+              <div className="bg-slate-800/50 rounded-lg p-4">
+                <div className="text-emerald-400 font-semibold mb-2">What You Share</div>
+                <p className="text-slate-400 text-sm">Methodology, frameworks, best practices—the &quot;how&quot; of risk analysis</p>
+              </div>
+              <div className="bg-slate-800/50 rounded-lg p-4">
+                <div className="text-blue-400 font-semibold mb-2">What Stays Private</div>
+                <p className="text-slate-400 text-sm">Your data, parameters, thresholds, and proprietary configurations</p>
+              </div>
+              <div className="bg-slate-800/50 rounded-lg p-4">
+                <div className="text-amber-400 font-semibold mb-2">What You Gain</div>
+                <p className="text-slate-400 text-sm">Access to 100+ skills refined by the collective expertise of the community</p>
+              </div>
+            </div>
+            <Link href="/skills-sharing" className="btn-secondary">
+              Learn About Skills Sharing →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-6 bg-slate-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-50 mb-6">
-            Skills + Patterns = Powerful Workflows
+            Skills + Patterns + GTD = Powerful Workflows
           </h2>
           <p className="text-lg text-slate-300 mb-8">
-            Individual skills are powerful. Combined into patterns, they become transformative.
+            Individual skills are powerful. Combined into patterns and aligned with your goals, they become transformative.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/platform/patterns" className="btn-primary">
               Explore Fabrix Patterns
             </Link>
-            <Link href="/domains" className="btn-secondary">
-              View Risk Domains
+            <Link href="/platform/goal-alignment" className="btn-secondary">
+              GTD Goal Alignment
             </Link>
           </div>
         </div>

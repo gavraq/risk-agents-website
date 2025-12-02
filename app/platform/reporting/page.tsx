@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 export default function NaturalLanguageReporting() {
-  const queryExamples = [
+  const queryExamples: { type: string; query: string; response: string; duration: string }[] = [
     {
       type: 'Exposure Query',
       query: 'Show me top 10 credit exposures by counterparty',
@@ -42,13 +42,16 @@ export default function NaturalLanguageReporting() {
       <section className="pt-32 pb-20 px-6 circuit-pattern">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6 inline-block">
-            <span className="badge-success">Natural Language Reporting</span>
+            <span className="badge-success">Platform Capability</span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-slate-50 mb-6">
-            Replace 50+ Reports with <span className="text-gradient-blue">Ad-Hoc Queries</span>
+            Natural Language <span className="text-gradient-blue">Reporting</span>
           </h1>
-          <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 mb-4 max-w-3xl mx-auto">
             Stop generating unused reports. Ask questions and get instant answers. Query your risk data like talking to your Chief Risk Officer.
+          </p>
+          <p className="text-slate-400 max-w-2xl mx-auto">
+            Powered by Skills, Patterns, and Context Engineering working together
           </p>
         </div>
       </section>
@@ -361,6 +364,7 @@ export default function NaturalLanguageReporting() {
       <footer className="py-12 px-6 bg-slate-950 border-t border-slate-800">
         <div className="max-w-6xl mx-auto text-center text-slate-400 text-sm">
           <p>© 2025 Risk Agents. Built by <a href="https://www.gavinslater.com" className="text-blue-400 hover:text-blue-300 transition-colors">Gavin Slater</a></p>
+          <p className="mt-2">30 Years of Chief Risk Officer Expertise, Delivered by AI</p>
         </div>
       </footer>
     </div>
