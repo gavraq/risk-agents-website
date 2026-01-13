@@ -79,10 +79,143 @@ a, button, input, .transition-all {
 
 /* Glass effect navigation - darker, more subtle */
 .glass-nav {
-  background: rgba(22, 22, 22, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(22, 22, 22, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+}
+
+.glass-nav-scrolled {
+  background: rgba(22, 22, 22, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Navigation link styles */
+.nav-link {
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--foreground);
+}
+
+/* Dropdown menu styles - subtle, not aggressive */
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding-top: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: all 0.2s ease;
+}
+
+.group:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content {
+  background: var(--background-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 8px 0;
+  min-width: 200px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  color: var(--foreground);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  background: var(--background-elevated);
+  border-top: 1px solid var(--border-subtle);
+  padding: 16px 24px 24px;
+}
+
+.mobile-menu-section {
+  margin-bottom: 8px;
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 0;
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mobile-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-dropdown.open {
+  max-height: 300px;
+}
+
+.mobile-dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.mobile-dropdown-item:hover {
+  color: var(--foreground);
+}
+
+.mobile-menu-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 12px 0;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: 12px 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-link:hover {
+  color: var(--foreground);
 }
 
 /* Button styles - minimal, professional */
