@@ -1,204 +1,153 @@
 @import "tailwindcss";
 
-/* Risk Agents Design System - Aligned with gavinslater.com */
+/* Risk Agents Design System - Sapius-inspired Dark Theme */
+/* "Less is more" - understated professionalism through restraint */
 
 :root {
-  /* Colors from gavinslater.com design system */
-  --background: #0F172A; /* slate-900 */
-  --foreground: #F8FAFC; /* slate-50 */
-  --card-bg: #1E293B; /* slate-800 */
-  --card-border: #334155; /* slate-700 */
-  --text-secondary: #CBD5E1; /* slate-300 */
-  --text-muted: #64748B; /* slate-500 */
+  /* Primary Dark Palette (Sapius-inspired) */
+  --background: rgb(22, 22, 22); /* Near-black */
+  --background-elevated: rgb(28, 28, 28); /* Slightly lighter for cards */
+  --foreground: rgb(255, 255, 255); /* White text */
 
-  /* Accent colors */
-  --ai-blue: #3B82F6; /* blue-600 */
-  --risk-amber: #F59E0B; /* amber-500 */
-  --success-green: #10B981; /* emerald-500 */
+  /* Subtle Gray Accents */
+  --text-secondary: rgb(164, 164, 164); /* Light gray for secondary text */
+  --text-muted: rgb(94, 94, 94); /* Muted gray for tertiary text */
+  --border-subtle: rgb(45, 45, 45); /* Subtle borders */
+  --border-light: rgb(60, 60, 60); /* Lighter borders on hover */
+
+  /* Minimal Accent (used sparingly) */
+  --accent: rgb(255, 255, 255); /* White as primary accent */
+  --accent-muted: rgb(164, 164, 164); /* Muted accent */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'SF Mono', Monaco, 'Consolas', monospace;
+  --font-heading: var(--font-league-spartan), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: var(--font-source-sans), -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Circuit background pattern from gavinslater.com */
-.circuit-pattern {
-  background-image:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(59, 130, 246, 0.03) 2px,
-      rgba(59, 130, 246, 0.03) 4px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 2px,
-      rgba(59, 130, 246, 0.03) 2px,
-      rgba(59, 130, 246, 0.03) 4px
-    );
-  background-size: 50px 50px;
+/* Typography - Headlines use League Spartan */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
 }
 
-/* Circuit dots overlay */
-.circuit-dots {
-  background-image:
-    radial-gradient(
-      circle,
-      rgba(59, 130, 246, 0.1) 1px,
-      transparent 1px
-    );
-  background-size: 30px 30px;
+/* Restrained transitions - 0.3s standard */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Card lift hover effect from gavinslater.com */
+a, button, input, .transition-all {
+  transition-duration: 0.3s;
+}
+
+/* Card styles - minimal, elegant */
+.card {
+  background: var(--background-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--border-light);
+}
+
+/* Subtle card lift effect - restrained */
 .card-lift {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+              border-color 0.3s ease;
 }
 
 .card-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+  border-color: var(--border-light);
 }
 
-/* Glass effect navigation from gavinslater.com */
+/* Glass effect navigation - darker, more subtle */
 .glass-nav {
-  background: rgba(30, 41, 59, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(22, 22, 22, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-/* Button styles from gavinslater.com */
+/* Button styles - minimal, professional */
 .btn-primary {
-  background: linear-gradient(135deg, #3B82F6, #2563EB);
-  color: white;
+  background: var(--foreground);
+  color: var(--background);
   padding: 12px 32px;
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
+  border-radius: 4px;
   transition: all 0.3s ease;
+  font-family: var(--font-heading);
   font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-  transform: translateY(-2px);
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #3B82F6;
+  color: var(--foreground);
   padding: 12px 32px;
-  border-radius: 8px;
-  border: 2px solid #3B82F6;
+  border-radius: 4px;
+  border: 1px solid var(--border-light);
   transition: all 0.3s ease;
+  font-family: var(--font-heading);
   font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
 }
 
 .btn-secondary:hover {
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--foreground);
 }
 
-/* Badge styles from gavinslater.com */
-.badge-ai {
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.3);
-  color: #3B82F6;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+/* Badge styles - understated */
+.badge {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.badge-risk {
-  background: rgba(245, 158, 11, 0.1);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  color: #F59E0B;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+/* Text utilities */
+.text-secondary {
+  color: var(--text-secondary);
 }
 
-.badge-success {
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  color: #10B981;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+.text-muted {
+  color: var(--text-muted);
 }
 
-/* Text gradient utilities from gavinslater.com */
-.text-gradient-blue {
-  background: linear-gradient(135deg, #60A5FA, #3B82F6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-gradient-amber {
-  background: linear-gradient(135deg, #FCD34D, #F59E0B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-gradient-green {
-  background: linear-gradient(135deg, #6EE7B7, #10B981);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* LED indicator (for pattern status) */
-.led-indicator {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.led-on {
-  background: #10B981;
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
-  animation: pulse 2s ease-in-out infinite;
-}
-
-.led-off {
-  background: #64748B;
-  opacity: 0.3;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
+/* Divider - subtle */
+.divider {
+  height: 1px;
+  background: var(--border-subtle);
+  width: 100%;
 }
 
 /* Scroll behavior */
@@ -206,29 +155,29 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar (matching gavinslater.com aesthetic) */
+/* Custom scrollbar - minimal */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0F172A;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #334155;
-  border-radius: 4px;
+  background: var(--border-subtle);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: var(--border-light);
 }
 
 /* Focus states for accessibility */
 *:focus-visible {
-  outline: 2px solid #3B82F6;
+  outline: 1px solid var(--foreground);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 /* Reduce motion for accessibility */
@@ -241,4 +190,21 @@ html {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Link styles - subtle underline on hover */
+a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--foreground);
 }
