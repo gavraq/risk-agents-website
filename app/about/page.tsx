@@ -395,8 +395,8 @@ export default function AboutPage() {
             <Link href="/skills-sharing/founding-members" className="btn-primary">
               Become a Founding Member
             </Link>
-            <Link href="/about/philosophy" className="btn-secondary">
-              Read Our Philosophy
+            <Link href="/how-we-think" className="btn-secondary">
+              Read How We Think
             </Link>
           </div>
         </div>
