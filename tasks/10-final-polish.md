@@ -14,8 +14,8 @@ Final review, testing, and polish before merging to main.
 ### Design Consistency
 - [x] Verify dark theme throughout all pages - Verified: All pages use dark backgrounds. Home/How We Think use CSS variables (rgb(22,22,22)), while About/Platform/Membership/Banks pages use Tailwind slate (slate-900/950). Both are valid dark themes; the slate palette has a subtle blue undertone vs pure gray. Visual consistency is maintained.
 - [x] Check typography consistency - Verified: All pages use League Spartan for headings (font-bold, -0.02em letter-spacing) and Source Sans 3 for body text (18px base, 1.7 line-height). Consistent hierarchy: H1 (4xl-7xl), H2 (3xl-4xl), H3 (lg-2xl), body (lg-xl with text-slate-300 or text-secondary), muted (sm with text-slate-400 or text-muted). Both CSS variable and Tailwind slate approaches are valid and visually consistent.
-- [ ] Ensure animations are subtle (0.3s)
-- [ ] Verify generous negative space
+- [x] Ensure animations are subtle (0.3s) - Verified: CSS global styles set 0.3s as standard transition duration (globals.css:48-55). All transitions use 0.2s-0.3s timing. Navigation uses duration-300 (300ms), dropdown arrows use duration-200 (200ms) for micro-interactions. Cards, buttons, links all follow the 0.3s standard. Includes prefers-reduced-motion support for accessibility.
+- [x] Verify generous negative space - Verified: Consistent vertical section padding (py-20 to py-32 = 80-128px), horizontal padding (px-6 = 24px), grid gaps (gap-6 to gap-12 = 24-48px), generous margins (mb-6 to mb-16). Hero sections use min-h-screen/min-h-[60vh] with flex centering. Content constrained with max-w-* containers (2xl-5xl). Professional, breathable layouts throughout.
 
 ### Content Review
 - [ ] 5-second test: Is value proposition clear?
