@@ -13,7 +13,7 @@ Final review, testing, and polish before merging to main.
 
 ### Design Consistency
 - [x] Verify dark theme throughout all pages - Verified: All pages use dark backgrounds. Home/How We Think use CSS variables (rgb(22,22,22)), while About/Platform/Membership/Banks pages use Tailwind slate (slate-900/950). Both are valid dark themes; the slate palette has a subtle blue undertone vs pure gray. Visual consistency is maintained.
-- [ ] Check typography consistency
+- [x] Check typography consistency - Verified: All pages use League Spartan for headings (font-bold, -0.02em letter-spacing) and Source Sans 3 for body text (18px base, 1.7 line-height). Consistent hierarchy: H1 (4xl-7xl), H2 (3xl-4xl), H3 (lg-2xl), body (lg-xl with text-slate-300 or text-secondary), muted (sm with text-slate-400 or text-muted). Both CSS variable and Tailwind slate approaches are valid and visually consistent.
 - [ ] Ensure animations are subtle (0.3s)
 - [ ] Verify generous negative space
 
