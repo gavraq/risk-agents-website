@@ -2,6 +2,11 @@ import Navigation from '../components/Navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'About Risk Agents - 30 Years of CRO Expertise Meets AI Innovation',
+  description: 'Founded by Gavin Slater with 30 years of banking risk experience at Barclays, Deutsche Bank, and ICBC Standard Bank. Learn how Risk Agents transforms risk management.',
+};
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen">

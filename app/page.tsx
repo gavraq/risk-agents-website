@@ -3,6 +3,11 @@ import Footer from './components/Footer';
 import EarlyAccessForm from './components/EarlyAccessForm';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Risk Agents - AI-Powered Risk Intelligence for Banks & Financial Institutions',
+  description: 'AI augments, humans decide. Risk Agents combines 100+ AI skills with 30 years of CRO expertise to transform risk management for banks and financial institutions.',
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen">

@@ -24,8 +24,8 @@ Final review, testing, and polish before merging to main.
 - [x] Is information layered, not overwhelming? - PASS: Homepage uses progressive disclosure with 5 clearly-defined layers: Hero (5s hook) → Problem (15s intrigue) → Solution cards (30s) → Credibility stats → Final CTA. Content is scannable and not overwhelming.
 
 ### SEO & Meta
-- [ ] Update page titles
-- [ ] Update meta descriptions
+- [x] Update page titles - Added metadata exports to 4 pages missing them (home, about, how-we-think, domains). All 24 pages now have unique, SEO-optimized titles following the "Page Title - Risk Agents" pattern.
+- [x] Update meta descriptions - All pages now have descriptive meta descriptions. Key pages include: Home (AI augments, 100+ skills, 30 years expertise), About (Gavin Slater's banking background), Platform pages (specific features), Member pages (audience-specific value propositions).
 - [ ] Verify Open Graph images
 - [ ] Check favicon
 

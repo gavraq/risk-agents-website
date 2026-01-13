@@ -1,6 +1,11 @@
 import Navigation from '../components/Navigation';
 import Link from 'next/link';
 
+export const metadata = {
+  title: '9 Risk Domains - Risk Agents',
+  description: '100+ AI skills across 9 risk domains: Credit, Market, Operational, Liquidity, Model, Climate, Regulatory, Strategic, and Risk Change. Comprehensive enterprise risk coverage.',
+};
+
 export default function DomainsPage() {
   return (
     <div className="min-h-screen">

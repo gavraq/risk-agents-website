@@ -1,6 +1,11 @@
 import Navigation from '../components/Navigation';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'How We Think - Risk Agents Philosophy',
+  description: 'Three principles guide Risk Agents: Human in the Loop, AI Augments Humans Decide, and Expanding Boundaries. Discover our approach to AI-powered risk management.',
+};
+
 export default function HowWeThinkPage() {
   return (
     <div className="min-h-screen">
