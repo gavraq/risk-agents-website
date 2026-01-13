@@ -109,8 +109,8 @@ export default function Navigation() {
               </div>
             </div>
 
-            {/* How We Think (was Design Philosophy) */}
-            <Link href="/about/philosophy" className="nav-link">
+            {/* How We Think */}
+            <Link href="/how-we-think" className="nav-link">
               How We Think
             </Link>
 
@@ -207,7 +207,7 @@ export default function Navigation() {
 
           {/* Other Links */}
           <div className="mobile-menu-divider"></div>
-          <Link href="/about/philosophy" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
+          <Link href="/how-we-think" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
             How We Think
           </Link>
           <Link href="/about" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
