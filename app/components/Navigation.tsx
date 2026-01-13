@@ -102,7 +102,7 @@ export default function Navigation() {
                   <Link href="/members/insurance" className="dropdown-item">
                     Insurance Companies
                   </Link>
-                  <Link href="/skills-sharing/founding-members" className="dropdown-item">
+                  <Link href="/members/founding" className="dropdown-item">
                     Founding Members
                   </Link>
                 </div>
@@ -199,7 +199,7 @@ export default function Navigation() {
               <Link href="/members/insurance" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
                 Insurance Companies
               </Link>
-              <Link href="/skills-sharing/founding-members" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+              <Link href="/members/founding" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
                 Founding Members
               </Link>
             </div>
