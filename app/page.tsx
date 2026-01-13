@@ -1,4 +1,5 @@
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import EarlyAccessForm from './components/EarlyAccessForm';
 import Link from 'next/link';
 
@@ -372,13 +373,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 bg-slate-950 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto text-center text-slate-400 text-sm">
-          <p>© 2025 Risk Agents. Built by <a href="https://www.gavinslater.com" className="text-blue-400 hover:text-blue-300 transition-colors">Gavin Slater</a></p>
-          <p className="mt-2">30 Years of Chief Risk Officer Expertise, Delivered by AI</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

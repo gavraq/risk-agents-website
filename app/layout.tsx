@@ -20,11 +20,20 @@ export const metadata: Metadata = {
     url: "https://www.risk-agents.com",
     siteName: "Risk Agents",
     type: "website",
+    images: [
+      {
+        url: "/images/RiskAgentsLogo.png",
+        width: 1200,
+        height: 630,
+        alt: "Risk Agents - Expanding the boundaries of your vision",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Risk Agents - AI-Powered Risk Intelligence",
     description: "Built on Skills, Patterns, and 30 Years of CRO Expertise",
+    images: ["/images/RiskAgentsLogo.png"],
   },
 };
 
