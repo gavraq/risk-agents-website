@@ -18,6 +18,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.risk-agents.com"),
   title: "Risk Agents - AI-Powered Risk Intelligence Platform",
   description: "100+ AI Skills that combine into patterns that evolve. Replace 50+ standard reports with natural language queries. Built on 30 years of CRO expertise.",
   keywords: ["risk management", "AI", "artificial intelligence", "banking", "credit risk", "market risk", "operational risk"],
