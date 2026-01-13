@@ -12,7 +12,7 @@ Final review, testing, and polish before merging to main.
 - [x] Test responsive design (mobile, tablet, desktop) - Verified: Mobile (375px) shows hamburger menu, stacked cards/grids; Tablet (768px) shows desktop nav at md: breakpoint; Desktop (1440px) shows full 3-column layouts. All pages tested: home, membership, banks. Tables use overflow-x-auto for mobile scroll.
 
 ### Design Consistency
-- [ ] Verify dark theme throughout all pages
+- [x] Verify dark theme throughout all pages - Verified: All pages use dark backgrounds. Home/How We Think use CSS variables (rgb(22,22,22)), while About/Platform/Membership/Banks pages use Tailwind slate (slate-900/950). Both are valid dark themes; the slate palette has a subtle blue undertone vs pure gray. Visual consistency is maintained.
 - [ ] Check typography consistency
 - [ ] Ensure animations are subtle (0.3s)
 - [ ] Verify generous negative space
