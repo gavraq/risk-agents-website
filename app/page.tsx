@@ -8,118 +8,24 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
 
-      {/* Hero Section - The AI Maturity Challenge */}
-      <section className="min-h-screen circuit-pattern circuit-dots flex items-center justify-center px-6 py-24 pt-32">
-        <div className="max-w-6xl mx-auto text-center">
-          {/* Main Headline */}
-          <h1 className="text-3xl md:text-5xl font-bold text-slate-50 mb-4 leading-tight">
-            The race is on to build AI-powered risk intelligence.
+      {/* Hero Section - Simple, Powerful Message */}
+      <section className="min-h-screen flex items-center justify-center px-6 py-24 pt-32">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Main Headline - Human-first message */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-[1.1] tracking-tight">
+            AI Augments.<br />
+            Humans Decide.
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 mb-4 max-w-4xl mx-auto">
-            Some organizations will have AI doing the heavy lifting while humans drive strategy.
-            <br className="hidden md:block" />
-            Others will still be copy-pasting into chatbots.
-          </p>
-          <p className="text-2xl md:text-3xl font-semibold text-gradient-amber mb-2">
-            Which future are you building?
+
+          {/* Subheadline - Strapline */}
+          <p className="text-xl md:text-2xl text-secondary mb-6 max-w-2xl mx-auto font-light">
+            Expanding the boundaries of your vision
           </p>
 
-          {/* AIMM Model Visual */}
-          <div className="max-w-5xl mx-auto my-12">
-            <div className="bg-slate-800/50 rounded-2xl p-6 md:p-8 border border-slate-700">
-              <p className="text-sm text-slate-400 mb-8 uppercase tracking-wide">
-                Based on Daniel Miessler&apos;s{' '}
-                <a
-                  href="https://www.youtube.com/watch?v=K8h9fEgf5yY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  AI Maturity Model (AIMM)
-                </a>
-              </p>
-
-              {/* Timeline row - centered over each box */}
-              <div className="hidden md:grid grid-cols-5 gap-1 text-xs text-slate-500 mb-2">
-                <div className="text-center">→ 2022</div>
-                <div className="text-center">2023 → 2025</div>
-                <div className="text-center">2025 → 2027</div>
-                <div className="text-center">2027+</div>
-                <div className="text-center">2030+</div>
-              </div>
-
-              {/* AIMM Levels - Horizontal Flow */}
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-1">
-                {/* Level 0 */}
-                <div className="bg-gradient-to-b from-slate-700/50 to-slate-800/50 rounded-lg p-4 md:p-5 flex flex-col">
-                  <div className="text-slate-400 font-bold text-base md:text-lg mb-2 whitespace-nowrap">0 <span className="font-normal uppercase tracking-wide">Natural</span></div>
-                  <div className="w-full h-0.5 bg-slate-600 mb-3"></div>
-                  <p className="text-slate-500 text-xs leading-relaxed flex-1">
-                    The human does their work completely on their own, with no AI assistance
-                  </p>
-                </div>
-
-                {/* Level 1 */}
-                <div className="bg-gradient-to-b from-amber-600/40 to-amber-700/40 rounded-lg p-4 md:p-5 border-2 border-amber-500 flex flex-col">
-                  <div className="text-amber-300 font-bold text-base md:text-lg mb-2 whitespace-nowrap">1 <span className="font-normal uppercase tracking-wide">Chatbots</span></div>
-                  <div className="w-full h-0.5 bg-amber-500/50 mb-3"></div>
-                  <p className="text-amber-200/80 text-xs leading-relaxed flex-1">
-                    The human asks questions and gets useful answers back from an AI chatbot-like system
-                  </p>
-                </div>
-
-                {/* Level 2 */}
-                <div className="bg-gradient-to-b from-blue-600/40 to-blue-700/40 rounded-lg p-4 md:p-5 border-2 border-blue-500 flex flex-col">
-                  <div className="text-blue-300 font-bold text-base md:text-lg mb-2 whitespace-nowrap">2 <span className="font-normal uppercase tracking-wide">Agentic</span></div>
-                  <div className="w-full h-0.5 bg-blue-500/50 mb-3"></div>
-                  <p className="text-blue-200/80 text-xs leading-relaxed flex-1">
-                    Agentic platforms magnify people&apos;s effectiveness by learning tasks, context, and tooling
-                  </p>
-                </div>
-
-                {/* Level 3 */}
-                <div className="bg-gradient-to-b from-violet-600/40 to-violet-700/40 rounded-lg p-4 md:p-5 border-2 border-violet-500 flex flex-col">
-                  <div className="text-violet-300 font-bold text-base md:text-lg mb-2 whitespace-nowrap">3 <span className="font-normal uppercase tracking-wide">Workflows</span></div>
-                  <div className="w-full h-0.5 bg-violet-500/50 mb-3"></div>
-                  <p className="text-violet-200/80 text-xs leading-relaxed flex-1">
-                    Most work is decomposed into automatable tasks and pipelines executed by AI
-                  </p>
-                </div>
-
-                {/* Level 4 */}
-                <div className="bg-gradient-to-b from-purple-700/30 to-purple-800/30 rounded-lg p-4 md:p-5 flex flex-col">
-                  <div className="text-purple-300 font-bold text-base md:text-lg mb-2 whitespace-nowrap">4 <span className="font-normal uppercase tracking-wide">Managed</span></div>
-                  <div className="w-full h-0.5 bg-purple-500/50 mb-3"></div>
-                  <p className="text-purple-300/70 text-xs leading-relaxed flex-1">
-                    AI captures current and desired state, and continuously makes adjustments
-                  </p>
-                </div>
-              </div>
-
-              {/* Labels below - two lines meeting in the middle */}
-              <div className="hidden md:flex mt-4 text-xs">
-                <div className="flex-1 flex items-center">
-                  <div className="flex-1 border-t border-slate-600"></div>
-                  <span className="text-slate-500 px-3">Human-centered work</span>
-                  <div className="flex-1 border-t border-slate-600"></div>
-                </div>
-                <div className="flex-1 flex items-center">
-                  <div className="flex-1 border-t border-slate-600"></div>
-                  <span className="text-slate-500 px-3">AI-centered work</span>
-                  <div className="flex-1 border-t border-slate-600"></div>
-                </div>
-              </div>
-
-              {/* Warning Message */}
-              <div className="mt-8 text-center">
-                <p className="text-slate-300 text-sm md:text-base">
-                  <span className="text-amber-400 font-semibold">⚠️ Your competitors are racing along this same maturity model.</span>
-                  <br />
-                  <span className="text-slate-400">The larger the gap between you and them, the more concerned you should be.</span>
-                </p>
-              </div>
-            </div>
-          </div>
+          {/* Audience Identifier */}
+          <p className="text-base md:text-lg text-muted mb-12 uppercase tracking-widest font-medium">
+            Risk Intelligence for Banks & Financial Institutions
+          </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -127,13 +33,13 @@ export default function Home() {
               href="#early-access"
               className="btn-primary inline-flex items-center gap-2"
             >
-              Join the Movement
+              Request Early Access
             </a>
             <Link
-              href="/skills-sharing"
+              href="#learn-more"
               className="btn-secondary inline-flex items-center gap-2"
             >
-              Learn About Skills Sharing
+              See How It Works
             </Link>
           </div>
         </div>
