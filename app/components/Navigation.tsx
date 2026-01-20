@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function Navigation() {
@@ -46,16 +45,9 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/RiskAgentsLogo.png"
-              alt="Risk Agents - Expanding the boundaries of your vision"
-              width={180}
-              height={50}
-              className="h-10 w-auto"
-              priority
-            />
+          {/* Home Button */}
+          <Link href="/" className="nav-link font-medium">
+            Home
           </Link>
 
           {/* Desktop Navigation */}
