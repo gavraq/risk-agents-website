@@ -19,8 +19,11 @@ export default function PlatformOverview() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             The Risk Agents Platform
           </h1>
-          <p className="text-xl text-secondary max-w-2xl">
-            An AI-powered risk intelligence system built on four foundational innovations that make the difference between a chatbot and a trusted risk advisor that augments human decision-making.
+          <p className="text-xl text-secondary max-w-2xl mb-6">
+            An AI-powered risk intelligence system that captures the Actual Process—not just the Official Record. Built to amplify human capability, not replace it.
+          </p>
+          <p className="text-lg text-muted max-w-2xl">
+            A risk analyst might review 50-100 scenarios per quarter—not because they&apos;re lazy, but because that&apos;s all the system allows. AI changes the equation: 10X or even 100X more than we can achieve today, with humans making the final decisions.
           </p>
         </div>
       </section>
@@ -101,20 +104,20 @@ export default function PlatformOverview() {
         </div>
       </section>
 
-      {/* The Platform Stack */}
+      {/* The Platform Stack - Simplified 3 Layers */}
       <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              The Platform Architecture
+              The New Stack
             </h2>
             <p className="text-lg text-secondary max-w-2xl mx-auto">
-              Six layers that work together to enable AI-powered risk intelligence
+              A simplified three-layer architecture that finally captures the Actual Process
             </p>
           </div>
 
-          <div className="space-y-4">
-            {/* Layer 1: Policies & Frameworks */}
+          <div className="space-y-6">
+            {/* Layer 1: Core Systems */}
             <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[rgb(45,45,45)] flex items-center justify-center">
@@ -122,56 +125,11 @@ export default function PlatformOverview() {
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h3 className="text-xl font-bold text-white">Goal-Oriented Policies & Frameworks</h3>
-                    <span className="text-xs bg-[rgb(45,45,45)] text-muted px-2 py-1 rounded">Risk Agents provides baseline</span>
-                  </div>
-                  <p className="text-secondary text-sm mb-3">
-                    AI-enabled, dynamic frameworks that agents know and operate within. Includes goals and objectives—not just permanent rules. Largely standardised across the industry based on regulatory requirements.
-                  </p>
-                  <p className="text-muted text-xs">
-                    <strong className="text-secondary">Risk Agents provides:</strong> Baseline templates (Meridien Global Bank), horizons-reviewer skill for goal-setting, weekly-review skill for monitoring. <strong className="text-secondary">You customise:</strong> Organisation-specific goals and objectives.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Layer 2: Risk Taxonomy */}
-            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[rgb(45,45,45)] flex items-center justify-center">
-                  <span className="text-white font-bold">2</span>
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h3 className="text-xl font-bold text-white">Risk Taxonomy</h3>
-                    <span className="text-xs bg-[rgb(45,45,45)] text-muted px-2 py-1 rounded">Risk Agents provides baseline</span>
-                  </div>
-                  <p className="text-secondary text-sm mb-3">
-                    A human-understandable structure that provides guardrails and maps where to find what. The taxonomy is the map; agents use it to navigate organisational knowledge efficiently.
-                  </p>
-                  <p className="text-muted text-xs mb-3">
-                    Seven layers: L1-Requirements, L2-Risk Types, L3-Governance, L4-Processes, L5-Controls, L6-Models, L7-Systems
-                  </p>
-                  <p className="text-muted text-xs">
-                    <strong className="text-secondary">Risk Agents provides:</strong> Baseline taxonomy structure, specialist documentation skills (policy-updater, procedure-writer). <strong className="text-secondary">You customise:</strong> Organisation-specific overlays and nuances.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Layer 3: Core Systems */}
-            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[rgb(45,45,45)] flex items-center justify-center">
-                  <span className="text-white font-bold">3</span>
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-3 mb-2">
                     <h3 className="text-xl font-bold text-white">Core Systems</h3>
                     <span className="text-xs bg-[rgb(45,45,45)] text-muted px-2 py-1 rounded">Your existing infrastructure</span>
                   </div>
                   <p className="text-secondary text-sm mb-3">
-                    Your market risk engines, credit workflow systems, regulatory reporting tools. These are the source of truth for deterministic processes—they&apos;re not going away. Agentic systems integrate via APIs.
+                    Your existing infrastructure stays in place. Credit workflow tools, market risk engines, regulatory reporting, trade capture systems. These continue to provide the <strong className="text-white">Official Record</strong>—deterministic, auditable, unchanged. They&apos;re good at what they do.
                   </p>
                   <p className="text-muted text-xs">
                     <strong className="text-secondary">Risk Agents provides:</strong> Integration patterns and examples. <strong className="text-secondary">You build:</strong> Connections to your specific systems.
@@ -180,24 +138,47 @@ export default function PlatformOverview() {
               </div>
             </div>
 
-            {/* Layer 4: Agent Scaffolding */}
+            {/* Layer 2: Agentic Systems */}
             <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[rgb(45,45,45)] flex items-center justify-center">
-                  <span className="text-white font-bold">4</span>
+                  <span className="text-white font-bold">2</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h3 className="text-xl font-bold text-white">Agent Scaffolding: Skills & Patterns</h3>
-                    <span className="text-xs bg-[rgb(45,45,45)] text-muted px-2 py-1 rounded">Risk Agents provides library</span>
+                    <h3 className="text-xl font-bold text-white">Agentic Systems</h3>
+                    <span className="text-xs bg-[rgb(45,45,45)] text-muted px-2 py-1 rounded">The new layer</span>
                   </div>
-                  <p className="text-secondary text-sm mb-3">
-                    Composable skills that combine into patterns. Skills are prompts + code (preference for code for determinism). This is where a generic agent becomes a specialist risk management tool.
+                  <p className="text-secondary text-sm mb-4">
+                    This is the new layer that captures the <strong className="text-white">Actual Process</strong>. It comprises two parts:
                   </p>
-                  <p className="text-muted text-xs">
-                    <strong className="text-secondary">Risk Agents provides:</strong> Skills library (climate-scorecard-filler, stress-scenario-suggester, regulatory-change-assessor, etc.) and patterns (complete workflows). <strong className="text-secondary">You customise:</strong> Organisation-specific adaptations.
+
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="bg-[rgb(22,22,22)] rounded-lg p-4 border border-[rgb(45,45,45)]">
+                      <p className="text-white font-semibold text-sm mb-2">The Foundation</p>
+                      <p className="text-muted text-xs mb-2">
+                        The core agentic loop provided by Large Language Models—a general-purpose reasoning engine trained on the internet. On its own, nothing more than that.
+                      </p>
+                      <p className="text-muted text-xs">
+                        <strong className="text-secondary">You purchase:</strong> LLM subscriptions from major labs (Anthropic, OpenAI, etc.)
+                      </p>
+                    </div>
+                    <div className="bg-[rgb(22,22,22)] rounded-lg p-4 border border-[rgb(45,45,45)]">
+                      <p className="text-white font-semibold text-sm mb-2">Skills & Patterns</p>
+                      <p className="text-muted text-xs mb-2">
+                        Composable building blocks of prompts and supporting code that provide specific business context. This is what transforms a generic reasoning engine into a specialist risk management tool.
+                      </p>
+                      <p className="text-muted text-xs">
+                        <strong className="text-secondary">Risk Agents provides:</strong> Skills library and patterns. <strong className="text-secondary">You customise:</strong> Organisation-specific adaptations.
+                      </p>
+                    </div>
+                  </div>
+
+                  <p className="text-secondary text-sm">
+                    <strong className="text-white">Critically, business owns these skills and updates them directly</strong>—changes happen in days, not months.
                   </p>
-                  <div className="flex flex-wrap gap-3 mt-3">
+
+                  <div className="flex flex-wrap gap-3 mt-4">
                     <Link href="/platform/skills" className="text-muted hover:text-secondary transition-colors text-xs">Explore Skills →</Link>
                     <Link href="/platform/patterns" className="text-muted hover:text-secondary transition-colors text-xs">Explore Patterns →</Link>
                   </div>
@@ -205,53 +186,32 @@ export default function PlatformOverview() {
               </div>
             </div>
 
-            {/* Layer 5: Agentic Foundation */}
+            {/* Layer 3: Data Layer */}
             <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[rgb(45,45,45)] flex items-center justify-center">
-                  <span className="text-white font-bold">5</span>
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h3 className="text-xl font-bold text-white">Agentic Foundation</h3>
-                    <span className="text-xs bg-[rgb(45,45,45)] text-muted px-2 py-1 rounded">You purchase LLM subscriptions</span>
-                  </div>
-                  <p className="text-secondary text-sm mb-3">
-                    The four primitives that power everything: <strong className="text-white">Context</strong>, <strong className="text-white">Model</strong>, <strong className="text-white">Prompts</strong>, <strong className="text-white">Tools/Integrations</strong>. Members purchase their own LLM subscriptions (Claude, OpenAI, etc.) and implement agents using these SDKs.
-                  </p>
-                  <p className="text-muted text-xs">
-                    <strong className="text-secondary">You purchase:</strong> LLM subscriptions from major labs (Anthropic, OpenAI, etc.). <strong className="text-secondary">You build:</strong> Agent implementations using their SDKs.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Layer 6: Data */}
-            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[rgb(45,45,45)] flex items-center justify-center">
-                  <span className="text-white font-bold">6</span>
+                  <span className="text-white font-bold">3</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-3 mb-2">
                     <h3 className="text-xl font-bold text-white">Data Layer</h3>
-                    <span className="text-xs bg-[rgb(45,45,45)] text-muted px-2 py-1 rounded">Your data, your context graphs</span>
+                    <span className="text-xs bg-[rgb(45,45,45)] text-muted px-2 py-1 rounded">Serves both layers above</span>
                   </div>
                   <p className="text-secondary text-sm mb-4">
-                    Three types of data working together:
+                    This serves both Core Systems and Agentic Systems:
                   </p>
-                  <div className="grid md:grid-cols-3 gap-3 mb-3">
+                  <div className="grid md:grid-cols-3 gap-3 mb-4">
                     <div className="bg-[rgb(22,22,22)] rounded-lg p-3 border border-[rgb(45,45,45)]">
                       <p className="text-white font-semibold text-xs mb-1">Structured Data</p>
-                      <p className="text-muted text-xs">Business facts—counterparties, trades, exposures, ratings</p>
+                      <p className="text-muted text-xs">Business facts with key attributes—trades, counterparties, transactions. Feeds both layers.</p>
                     </div>
                     <div className="bg-[rgb(22,22,22)] rounded-lg p-3 border border-[rgb(45,45,45)]">
                       <p className="text-white font-semibold text-xs mb-1">Unstructured Data</p>
-                      <p className="text-muted text-xs">Documents, transcripts, emails, Slack/Teams—tagged to taxonomy</p>
+                      <p className="text-muted text-xs">Meeting transcripts, Slack/Teams discussions, decision evidence, email threads. This is where the Actual Process lives.</p>
                     </div>
                     <div className="bg-[rgb(22,22,22)] rounded-lg p-3 border border-[rgb(45,45,45)]">
                       <p className="text-white font-semibold text-xs mb-1">Context Graphs</p>
-                      <p className="text-muted text-xs">Decision traces that accumulate over time—the &quot;why&quot; behind decisions</p>
+                      <p className="text-muted text-xs">Accumulated reasoning and decision traces. Captures not just what decisions were made, but why, with what reasoning, under what circumstances.</p>
                     </div>
                   </div>
                   <p className="text-muted text-xs">
