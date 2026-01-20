@@ -70,14 +70,40 @@ export default function Navigation() {
               </button>
               <div className="dropdown-menu">
                 <div className="dropdown-content">
-                  <Link href="/platform" className="dropdown-item">
-                    Overview
+                  {/* Story Arc Items */}
+                  <Link href="/risk-management-crisis" className="dropdown-item">
+                    The Risk Management Crisis
                   </Link>
-                  <Link href="/platform/skills" className="dropdown-item">
-                    Skills Framework
+                  <Link href="/ai-maturity-model" className="dropdown-item">
+                    AI Maturity Model
+                  </Link>
+                  <Link href="/platform/human-in-the-loop" className="dropdown-item">
+                    Human-in-the-Loop
+                  </Link>
+                  <Link href="/skills-sharing" className="dropdown-item">
+                    Why Share Skills
                   </Link>
                   <Link href="/skills-sharing/how-it-works" className="dropdown-item">
-                    How It Works
+                    How Skills Sharing Works
+                  </Link>
+                  {/* Four Innovations */}
+                  <div className="dropdown-divider"></div>
+                  <Link href="/platform/context-management" className="dropdown-item">
+                    Context Management
+                  </Link>
+                  <Link href="/platform/skills" className="dropdown-item">
+                    Skills
+                  </Link>
+                  <Link href="/platform/patterns" className="dropdown-item">
+                    Patterns
+                  </Link>
+                  <Link href="/platform/goal-alignment" className="dropdown-item">
+                    Goal Alignment
+                  </Link>
+                  {/* Platform Overview */}
+                  <div className="dropdown-divider"></div>
+                  <Link href="/platform" className="dropdown-item">
+                    Platform Overview
                   </Link>
                 </div>
               </div>
@@ -161,14 +187,40 @@ export default function Navigation() {
               </svg>
             </button>
             <div className={`mobile-dropdown ${openDropdown === 'platform' ? 'open' : ''}`}>
-              <Link href="/platform" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
-                Overview
+              {/* Story Arc Items */}
+              <Link href="/risk-management-crisis" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                The Risk Management Crisis
               </Link>
-              <Link href="/platform/skills" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
-                Skills Framework
+              <Link href="/ai-maturity-model" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                AI Maturity Model
+              </Link>
+              <Link href="/platform/human-in-the-loop" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Human-in-the-Loop
+              </Link>
+              <Link href="/skills-sharing" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Why Share Skills
               </Link>
               <Link href="/skills-sharing/how-it-works" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
-                How It Works
+                How Skills Sharing Works
+              </Link>
+              {/* Four Innovations */}
+              <div className="mobile-dropdown-divider"></div>
+              <Link href="/platform/context-management" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Context Management
+              </Link>
+              <Link href="/platform/skills" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Skills
+              </Link>
+              <Link href="/platform/patterns" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Patterns
+              </Link>
+              <Link href="/platform/goal-alignment" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Goal Alignment
+              </Link>
+              {/* Platform Overview */}
+              <div className="mobile-dropdown-divider"></div>
+              <Link href="/platform" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Platform Overview
               </Link>
             </div>
           </div>

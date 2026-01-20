@@ -1,4 +1,5 @@
 import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 import Link from 'next/link';
 
 export const metadata = {
@@ -12,59 +13,79 @@ export default function InvestmentManagers() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 circuit-pattern circuit-dots">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="badge-success mb-6 inline-block">For Investment Managers</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
+      <section className="pt-32 pb-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm uppercase tracking-widest text-muted mb-4">For Investment Managers</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Risk Intelligence for Investment Professionals
           </h1>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          <p className="text-xl text-secondary max-w-2xl">
             Pre-built AI skills for portfolio risk management, market analysis, and investment compliance. Designed for the unique demands of asset management.
           </p>
         </div>
       </section>
 
       {/* Why Investment Managers */}
-      <section className="py-20 px-6 bg-slate-900">
+      <section className="py-16 px-6 bg-[rgb(28,28,28)]">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-slate-50 mb-6">
+              <h2 className="text-3xl font-bold text-white mb-6">
                 Why Risk Agents for Investment Managers?
               </h2>
-              <p className="text-lg text-slate-300 mb-6">
+              <p className="text-lg text-secondary mb-6">
                 Investment risk is different from banking risk. You need speed, flexibility, and deep market insight—not rigid banking frameworks retrofitted to asset management.
               </p>
-              <p className="text-lg text-slate-300 mb-6">
+              <p className="text-lg text-secondary mb-6">
                 Risk Agents provides skills built for investment professionals: portfolio analytics, market risk decomposition, factor analysis, and compliance monitoring that understands investment mandates.
               </p>
-              <p className="text-lg text-slate-300">
+              <p className="text-lg text-secondary">
                 Your portfolio managers and risk teams stay in control—AI provides analysis and insights, humans make the investment decisions.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-emerald-900/20 to-teal-900/20 rounded-2xl p-8 border border-emerald-900/30">
-              <h3 className="text-xl font-bold text-emerald-400 mb-6">Investment Manager Benefits</h3>
-              <ul className="space-y-4 text-slate-300">
+            <div className="bg-[rgb(22,22,22)] rounded-lg p-8 border border-[rgb(45,45,45)]">
+              <h3 className="text-xl font-bold text-white mb-6">Investment Manager Benefits</h3>
+              <ul className="space-y-4 text-secondary">
                 <li className="flex items-start gap-3">
-                  <span className="text-emerald-400 mt-1">★</span>
-                  <span><strong className="text-slate-200">Portfolio-centric view</strong>—skills designed around investment portfolios, not loan books</span>
+                  <span className="text-white mt-0.5">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <span><strong className="text-white">Portfolio-centric view</strong>—skills designed around investment portfolios, not loan books</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-emerald-400 mt-1">★</span>
-                  <span><strong className="text-slate-200">Market-aware analysis</strong>—real-time factor decomposition and scenario analysis</span>
+                  <span className="text-white mt-0.5">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <span><strong className="text-white">Market-aware analysis</strong>—real-time factor decomposition and scenario analysis</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-emerald-400 mt-1">★</span>
-                  <span><strong className="text-slate-200">Mandate compliance</strong>—investment guideline monitoring built in</span>
+                  <span className="text-white mt-0.5">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <span><strong className="text-white">Mandate compliance</strong>—investment guideline monitoring built in</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-emerald-400 mt-1">★</span>
-                  <span><strong className="text-slate-200">Investor reporting</strong>—risk reporting that speaks your clients&apos; language</span>
+                  <span className="text-white mt-0.5">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <span><strong className="text-white">Investor reporting</strong>—risk reporting that speaks your clients&apos; language</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-emerald-400 mt-1">★</span>
-                  <span><strong className="text-slate-200">Flexible deployment</strong>—works with your existing systems and data</span>
+                  <span className="text-white mt-0.5">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <span><strong className="text-white">Flexible deployment</strong>—works with your existing systems and data</span>
                 </li>
               </ul>
             </div>
@@ -73,57 +94,81 @@ export default function InvestmentManagers() {
       </section>
 
       {/* Investment-Specific Use Cases */}
-      <section className="py-20 px-6 bg-slate-950">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-50 mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               Investment-Specific Use Cases
             </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p className="text-lg text-muted max-w-2xl mx-auto">
               Skills designed for the challenges investment risk teams face
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
-              <div className="text-3xl mb-4">📊</div>
-              <h3 className="text-lg font-bold text-slate-50 mb-2">Portfolio Risk Analytics</h3>
-              <p className="text-slate-400 text-sm">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Portfolio Risk Analytics</h3>
+              <p className="text-muted text-sm">
                 VaR decomposition, factor exposure analysis, concentration risk, correlation breakdown, tail risk assessment.
               </p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
-              <div className="text-3xl mb-4">🎯</div>
-              <h3 className="text-lg font-bold text-slate-50 mb-2">Factor Analysis</h3>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Factor Analysis</h3>
+              <p className="text-muted text-sm">
                 Multi-factor attribution, style drift detection, benchmark decomposition, alpha/beta separation.
               </p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
-              <div className="text-3xl mb-4">⚡</div>
-              <h3 className="text-lg font-bold text-slate-50 mb-2">Stress Testing</h3>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Stress Testing</h3>
+              <p className="text-muted text-sm">
                 Historical scenario replay, hypothetical stress scenarios, reverse stress testing, sensitivity analysis.
               </p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
-              <div className="text-3xl mb-4">📋</div>
-              <h3 className="text-lg font-bold text-slate-50 mb-2">Mandate Compliance</h3>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Mandate Compliance</h3>
+              <p className="text-muted text-sm">
                 Investment guideline monitoring, pre-trade compliance, breach detection, remediation tracking.
               </p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
-              <div className="text-3xl mb-4">💧</div>
-              <h3 className="text-lg font-bold text-slate-50 mb-2">Liquidity Risk</h3>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Liquidity Risk</h3>
+              <p className="text-muted text-sm">
                 Redemption scenario analysis, liquidity bucketing, market impact estimation, portfolio liquidation analysis.
               </p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700">
-              <div className="text-3xl mb-4">📑</div>
-              <h3 className="text-lg font-bold text-slate-50 mb-2">Investor Reporting</h3>
-              <p className="text-slate-400 text-sm">
+            <div className="bg-[rgb(28,28,28)] rounded-lg p-6 border border-[rgb(45,45,45)]">
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Investor Reporting</h3>
+              <p className="text-muted text-sm">
                 Risk report generation, performance attribution, regulatory filings, client-ready documentation.
               </p>
             </div>
@@ -132,84 +177,84 @@ export default function InvestmentManagers() {
       </section>
 
       {/* Relevant Risk Domains */}
-      <section className="py-20 px-6 bg-slate-900">
+      <section className="py-16 px-6 bg-[rgb(28,28,28)]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-50 mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               Relevant Risk Domains
             </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p className="text-lg text-muted max-w-2xl mx-auto">
               Investment managers typically engage with these risk domains from our skills library
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-emerald-900/30 text-center">
-              <h3 className="text-lg font-bold text-emerald-400 mb-2">Market Risk</h3>
-              <p className="text-slate-400 text-sm">Equity, fixed income, derivatives, FX</p>
+            <div className="bg-[rgb(22,22,22)] rounded-lg p-6 border border-[rgb(45,45,45)] text-center">
+              <h3 className="text-lg font-bold text-white mb-2">Market Risk</h3>
+              <p className="text-muted text-sm">Equity, fixed income, derivatives, FX</p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-blue-900/30 text-center">
-              <h3 className="text-lg font-bold text-blue-400 mb-2">Credit Risk</h3>
-              <p className="text-slate-400 text-sm">Counterparty, issuer, spread risk</p>
+            <div className="bg-[rgb(22,22,22)] rounded-lg p-6 border border-[rgb(45,45,45)] text-center">
+              <h3 className="text-lg font-bold text-white mb-2">Credit Risk</h3>
+              <p className="text-muted text-sm">Counterparty, issuer, spread risk</p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-purple-900/30 text-center">
-              <h3 className="text-lg font-bold text-purple-400 mb-2">Liquidity Risk</h3>
-              <p className="text-slate-400 text-sm">Portfolio, funding, redemption</p>
+            <div className="bg-[rgb(22,22,22)] rounded-lg p-6 border border-[rgb(45,45,45)] text-center">
+              <h3 className="text-lg font-bold text-white mb-2">Liquidity Risk</h3>
+              <p className="text-muted text-sm">Portfolio, funding, redemption</p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-amber-900/30 text-center">
-              <h3 className="text-lg font-bold text-amber-400 mb-2">Operational Risk</h3>
-              <p className="text-slate-400 text-sm">Trade operations, custody, valuation</p>
+            <div className="bg-[rgb(22,22,22)] rounded-lg p-6 border border-[rgb(45,45,45)] text-center">
+              <h3 className="text-lg font-bold text-white mb-2">Operational Risk</h3>
+              <p className="text-muted text-sm">Trade operations, custody, valuation</p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-cyan-900/30 text-center">
-              <h3 className="text-lg font-bold text-cyan-400 mb-2">Compliance</h3>
-              <p className="text-slate-400 text-sm">Investment mandates, regulatory, ESG</p>
+            <div className="bg-[rgb(22,22,22)] rounded-lg p-6 border border-[rgb(45,45,45)] text-center">
+              <h3 className="text-lg font-bold text-white mb-2">Compliance</h3>
+              <p className="text-muted text-sm">Investment mandates, regulatory, ESG</p>
             </div>
-            <div className="bg-slate-800/50 rounded-xl p-6 border border-rose-900/30 text-center">
-              <h3 className="text-lg font-bold text-rose-400 mb-2">Model Risk</h3>
-              <p className="text-slate-400 text-sm">Pricing models, risk models, valuation</p>
+            <div className="bg-[rgb(22,22,22)] rounded-lg p-6 border border-[rgb(45,45,45)] text-center">
+              <h3 className="text-lg font-bold text-white mb-2">Model Risk</h3>
+              <p className="text-muted text-sm">Pricing models, risk models, valuation</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* How to Join */}
-      <section className="py-20 px-6 bg-slate-950">
+      <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-50 mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               How to Join
             </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p className="text-lg text-muted max-w-2xl mx-auto">
               Getting started is straightforward
             </p>
           </div>
 
           <div className="space-y-6">
             <div className="flex items-start gap-6">
-              <div className="w-12 h-12 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold flex-shrink-0">1</div>
+              <div className="w-12 h-12 rounded-full bg-[rgb(45,45,45)] flex items-center justify-center text-white font-bold flex-shrink-0">1</div>
               <div className="flex-1 pt-2">
-                <h3 className="text-lg font-bold text-slate-50 mb-2">Request Early Access</h3>
-                <p className="text-slate-400">
+                <h3 className="text-lg font-bold text-white mb-2">Request Early Access</h3>
+                <p className="text-muted">
                   Join our early access list to be among the first investment managers to explore the platform.
                 </p>
               </div>
             </div>
 
             <div className="flex items-start gap-6">
-              <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold flex-shrink-0">2</div>
+              <div className="w-12 h-12 rounded-full bg-[rgb(45,45,45)] flex items-center justify-center text-white font-bold flex-shrink-0">2</div>
               <div className="flex-1 pt-2">
-                <h3 className="text-lg font-bold text-slate-50 mb-2">Discovery Session</h3>
-                <p className="text-slate-400">
+                <h3 className="text-lg font-bold text-white mb-2">Discovery Session</h3>
+                <p className="text-muted">
                   We&apos;ll discuss your investment strategies, risk function priorities, and how Risk Agents can help.
                 </p>
               </div>
             </div>
 
             <div className="flex items-start gap-6">
-              <div className="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold flex-shrink-0">3</div>
+              <div className="w-12 h-12 rounded-full bg-[rgb(45,45,45)] flex items-center justify-center text-white font-bold flex-shrink-0">3</div>
               <div className="flex-1 pt-2">
-                <h3 className="text-lg font-bold text-slate-50 mb-2">Pilot Programme</h3>
-                <p className="text-slate-400">
+                <h3 className="text-lg font-bold text-white mb-2">Pilot Programme</h3>
+                <p className="text-muted">
                   Start with a focused pilot on specific portfolios or use cases before broader rollout.
                 </p>
               </div>
@@ -219,12 +264,12 @@ export default function InvestmentManagers() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-slate-900">
+      <section className="py-16 px-6 bg-[rgb(28,28,28)]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-slate-50 mb-6">
+          <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Explore?
           </h2>
-          <p className="text-lg text-slate-300 mb-8">
+          <p className="text-lg text-secondary mb-8">
             Join leading investment managers discovering how AI can enhance their risk capabilities.
           </p>
 
@@ -234,43 +279,36 @@ export default function InvestmentManagers() {
             </Link>
             <a
               href="mailto:gavin@risk-agents.com?subject=Investment%20Manager%20Membership%20Enquiry"
-              className="btn-secondary inline-flex items-center gap-2"
+              className="btn-secondary inline-flex items-center justify-center gap-2"
             >
-              <span>📧</span>
               Contact Us
             </a>
           </div>
 
-          <p className="text-slate-500 text-sm mt-6">
+          <p className="text-muted text-sm mt-6">
             Interested in shaping the platform from the start?{' '}
-            <Link href="/members/founding" className="text-amber-400 hover:text-amber-300 transition-colors">
-              Learn about Founding Membership →
+            <Link href="/members/founding" className="text-secondary hover:text-white transition-colors">
+              Learn about Founding Membership &rarr;
             </Link>
           </p>
         </div>
       </section>
 
       {/* Navigation */}
-      <section className="py-12 px-6 bg-slate-950">
+      <section className="py-12 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/members/banks" className="btn-secondary">
-              ← Banks
+              &larr; Banks
             </Link>
             <Link href="/members/insurance" className="btn-secondary">
-              Insurance Companies →
+              Insurance Companies &rarr;
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 bg-slate-950 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto text-center text-slate-400 text-sm">
-          <p>© 2025 Risk Agents. Built by <a href="https://www.gavinslater.com" className="text-blue-400 hover:text-blue-300 transition-colors">Gavin Slater</a></p>
-          <p className="mt-2">30 Years of Chief Risk Officer Expertise, Delivered by AI</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

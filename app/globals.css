@@ -150,6 +150,12 @@ a, button, input, .transition-all {
   background: rgba(255, 255, 255, 0.03);
 }
 
+.dropdown-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 8px 0;
+}
+
 /* Mobile menu styles */
 .mobile-menu {
   background: var(--background-elevated);
@@ -184,7 +190,7 @@ a, button, input, .transition-all {
 }
 
 .mobile-dropdown.open {
-  max-height: 300px;
+  max-height: 600px;
 }
 
 .mobile-dropdown-item {
@@ -197,6 +203,12 @@ a, button, input, .transition-all {
 
 .mobile-dropdown-item:hover {
   color: var(--foreground);
+}
+
+.mobile-dropdown-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 8px 16px;
 }
 
 .mobile-menu-divider {
