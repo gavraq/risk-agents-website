@@ -1,384 +1,291 @@
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import EarlyAccessForm from './components/EarlyAccessForm';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Risk Agents - AI-Powered Risk Intelligence for Banks & Financial Institutions',
+  description: 'AI augments, humans decide. Risk Agents combines 100+ AI skills with 30 years of CRO expertise to transform risk management for banks and financial institutions.',
+};
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
 
-      {/* Hero Section - The AI Maturity Challenge */}
-      <section className="min-h-screen circuit-pattern circuit-dots flex items-center justify-center px-6 py-24 pt-32">
-        <div className="max-w-6xl mx-auto text-center">
-          {/* Main Headline */}
-          <h1 className="text-3xl md:text-5xl font-bold text-slate-50 mb-4 leading-tight">
-            The race is on to build AI-powered risk intelligence.
-          </h1>
-          <p className="text-lg md:text-xl text-slate-300 mb-4 max-w-4xl mx-auto">
-            Some organizations will have AI doing the heavy lifting while humans drive strategy.
-            <br className="hidden md:block" />
-            Others will still be copy-pasting into chatbots.
-          </p>
-          <p className="text-2xl md:text-3xl font-semibold text-gradient-amber mb-2">
-            Which future are you building?
-          </p>
+      {/* Layer 1: Hero - 5 seconds (Hook) */}
+      <section
+        className="min-h-screen flex items-center justify-center px-6 py-24 pt-32 relative"
+        style={{
+          backgroundImage: 'url(/images/RiskAgentsLogo.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60" />
 
-          {/* AIMM Model Visual */}
-          <div className="max-w-5xl mx-auto my-12">
-            <div className="bg-slate-800/50 rounded-2xl p-6 md:p-8 border border-slate-700">
-              <p className="text-sm text-slate-400 mb-8 uppercase tracking-wide">
-                Based on Daniel Miessler&apos;s{' '}
-                <a
-                  href="https://www.youtube.com/watch?v=K8h9fEgf5yY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  AI Maturity Model (AIMM)
-                </a>
-              </p>
+        <div className="absolute inset-0 flex flex-col justify-between py-20 pb-8 px-6 z-10">
+          {/* Top section - main headline */}
+          <div className="text-center pt-16">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
+              AI Augments. Humans Decide.
+            </h1>
 
-              {/* Timeline row - centered over each box */}
-              <div className="hidden md:grid grid-cols-5 gap-1 text-xs text-slate-500 mb-2">
-                <div className="text-center">→ 2022</div>
-                <div className="text-center">2023 → 2025</div>
-                <div className="text-center">2025 → 2027</div>
-                <div className="text-center">2027+</div>
-                <div className="text-center">2030+</div>
-              </div>
-
-              {/* AIMM Levels - Horizontal Flow */}
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-1">
-                {/* Level 0 */}
-                <div className="bg-gradient-to-b from-slate-700/50 to-slate-800/50 rounded-lg p-4 md:p-5 flex flex-col">
-                  <div className="text-slate-400 font-bold text-base md:text-lg mb-2 whitespace-nowrap">0 <span className="font-normal uppercase tracking-wide">Natural</span></div>
-                  <div className="w-full h-0.5 bg-slate-600 mb-3"></div>
-                  <p className="text-slate-500 text-xs leading-relaxed flex-1">
-                    The human does their work completely on their own, with no AI assistance
-                  </p>
-                </div>
-
-                {/* Level 1 */}
-                <div className="bg-gradient-to-b from-amber-600/40 to-amber-700/40 rounded-lg p-4 md:p-5 border-2 border-amber-500 flex flex-col">
-                  <div className="text-amber-300 font-bold text-base md:text-lg mb-2 whitespace-nowrap">1 <span className="font-normal uppercase tracking-wide">Chatbots</span></div>
-                  <div className="w-full h-0.5 bg-amber-500/50 mb-3"></div>
-                  <p className="text-amber-200/80 text-xs leading-relaxed flex-1">
-                    The human asks questions and gets useful answers back from an AI chatbot-like system
-                  </p>
-                </div>
-
-                {/* Level 2 */}
-                <div className="bg-gradient-to-b from-blue-600/40 to-blue-700/40 rounded-lg p-4 md:p-5 border-2 border-blue-500 flex flex-col">
-                  <div className="text-blue-300 font-bold text-base md:text-lg mb-2 whitespace-nowrap">2 <span className="font-normal uppercase tracking-wide">Agentic</span></div>
-                  <div className="w-full h-0.5 bg-blue-500/50 mb-3"></div>
-                  <p className="text-blue-200/80 text-xs leading-relaxed flex-1">
-                    Agentic platforms magnify people&apos;s effectiveness by learning tasks, context, and tooling
-                  </p>
-                </div>
-
-                {/* Level 3 */}
-                <div className="bg-gradient-to-b from-violet-600/40 to-violet-700/40 rounded-lg p-4 md:p-5 border-2 border-violet-500 flex flex-col">
-                  <div className="text-violet-300 font-bold text-base md:text-lg mb-2 whitespace-nowrap">3 <span className="font-normal uppercase tracking-wide">Workflows</span></div>
-                  <div className="w-full h-0.5 bg-violet-500/50 mb-3"></div>
-                  <p className="text-violet-200/80 text-xs leading-relaxed flex-1">
-                    Most work is decomposed into automatable tasks and pipelines executed by AI
-                  </p>
-                </div>
-
-                {/* Level 4 */}
-                <div className="bg-gradient-to-b from-purple-700/30 to-purple-800/30 rounded-lg p-4 md:p-5 flex flex-col">
-                  <div className="text-purple-300 font-bold text-base md:text-lg mb-2 whitespace-nowrap">4 <span className="font-normal uppercase tracking-wide">Managed</span></div>
-                  <div className="w-full h-0.5 bg-purple-500/50 mb-3"></div>
-                  <p className="text-purple-300/70 text-xs leading-relaxed flex-1">
-                    AI captures current and desired state, and continuously makes adjustments
-                  </p>
-                </div>
-              </div>
-
-              {/* Labels below - two lines meeting in the middle */}
-              <div className="hidden md:flex mt-4 text-xs">
-                <div className="flex-1 flex items-center">
-                  <div className="flex-1 border-t border-slate-600"></div>
-                  <span className="text-slate-500 px-3">Human-centered work</span>
-                  <div className="flex-1 border-t border-slate-600"></div>
-                </div>
-                <div className="flex-1 flex items-center">
-                  <div className="flex-1 border-t border-slate-600"></div>
-                  <span className="text-slate-500 px-3">AI-centered work</span>
-                  <div className="flex-1 border-t border-slate-600"></div>
-                </div>
-              </div>
-
-              {/* Warning Message */}
-              <div className="mt-8 text-center">
-                <p className="text-slate-300 text-sm md:text-base">
-                  <span className="text-amber-400 font-semibold">⚠️ Your competitors are racing along this same maturity model.</span>
-                  <br />
-                  <span className="text-slate-400">The larger the gap between you and them, the more concerned you should be.</span>
-                </p>
-              </div>
-            </div>
+            <p className="text-base md:text-lg text-slate-300 uppercase tracking-widest font-medium">
+              Risk Intelligence for Banks & Financial Institutions
+            </p>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {/* Bottom section - CTA button */}
+          <div className="text-center mb-0">
             <a
               href="#early-access"
               className="btn-primary inline-flex items-center gap-2"
             >
-              Join the Movement
+              Request Early Access
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Layer 2: The Challenge */}
+      <section className="py-24 px-6">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            The Challenge in Risk Management
+          </h2>
+          <p className="text-lg text-secondary leading-relaxed mb-6">
+            Risk professionals are drowning in routine tasks while strategic threats evolve unchecked. Tick-box compliance crowds out strategic thinking. Volumes of static reports go unread. Knowledge is trapped in heads and walks out when people leave.
+          </p>
+          <p className="text-lg text-secondary leading-relaxed mb-8">
+            The universe of potential risks vastly exceeds human capacity to analyze. Most risks remain invisible—not because they&apos;re unimportant, but because there simply isn&apos;t time to look.
+          </p>
+          <Link
+            href="/risk-management-crisis"
+            className="text-muted hover:text-secondary transition-colors text-sm inline-flex items-center gap-2"
+          >
+            Explore the Risk Management Crisis &rarr;
+          </Link>
+        </div>
+      </section>
+
+      {/* Layer 3: The Urgency */}
+      <section className="py-24 px-6 bg-[rgb(28,28,28)]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            The Window Is Closing
+          </h2>
+          <p className="text-lg text-secondary leading-relaxed mb-6">
+            While you&apos;re buried in compliance, your competitors are deploying AI. Leading institutions are rapidly advancing along the AI Maturity Model—moving from basic automation to intelligent augmentation.
+          </p>
+          <p className="text-lg text-secondary leading-relaxed mb-8">
+            The gap widens every day. Those who act now will define the future of risk management. Those who wait will be playing catch-up for years.
+          </p>
+          <Link
+            href="/ai-maturity-model"
+            className="text-muted hover:text-secondary transition-colors text-sm inline-flex items-center gap-2"
+          >
+            Explore the AI Maturity Model &rarr;
+          </Link>
+        </div>
+      </section>
+
+      {/* Layer 4: The Future Vision */}
+      <section className="py-24 px-6">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            Expanding the Boundaries of What&apos;s Possible
+          </h2>
+          <p className="text-lg text-secondary leading-relaxed mb-6">
+            AI doesn&apos;t replace human judgment—it expands what humans can meaningfully oversee. Monitor thousands of scenarios instead of dozens. Detect patterns in real-time instead of batch analysis. Explore future possibilities that were previously invisible.
+          </p>
+          <p className="text-lg text-secondary leading-relaxed mb-8">
+            The irreplaceable human elements remain: risk judgment, accountability, institutional context, and knowing when models miss the point. AI handles the grunt work so you can focus on what matters.
+          </p>
+          <Link
+            href="/platform/human-in-the-loop"
+            className="text-muted hover:text-secondary transition-colors text-sm inline-flex items-center gap-2 mb-12 block"
+          >
+            Explore Human-in-the-Loop &rarr;
+          </Link>
+
+          <h3 className="text-2xl font-bold text-white mb-6">
+            Not Software You Buy—A Community You Join
+          </h3>
+          <p className="text-lg text-secondary leading-relaxed mb-6">
+            Individual institutions face inherent limitations—finite resources, concentrated expertise, isolated knowledge. Consultancies charge exorbitant fees to bring &quot;multi-bank experience&quot; to your door.
+          </p>
+          <p className="text-lg text-secondary leading-relaxed mb-6">
+            <strong className="text-white">What if we democratized that experience?</strong> Share the non-competitive parts (methodology, frameworks, templates) while keeping your proprietary data and parameters private.
+          </p>
+          <p className="text-lg text-secondary leading-relaxed mb-8">
+            When firms collaborate strategically, their combined capabilities create something far more powerful than the sum of their parts. Knowledge compounds. Best practices spread. The entire industry becomes more resilient.
+          </p>
+
+          <div className="flex flex-col sm:flex-row sm:justify-start gap-4 sm:gap-8">
             <Link
               href="/skills-sharing"
-              className="btn-secondary inline-flex items-center gap-2"
+              className="text-muted hover:text-secondary transition-colors text-sm inline-flex items-center gap-2"
             >
-              Learn About Skills Sharing
+              Explore Why Share Skills &rarr;
+            </Link>
+            <Link
+              href="/skills-sharing/how-it-works"
+              className="text-muted hover:text-secondary transition-colors text-sm inline-flex items-center gap-2"
+            >
+              Explore How Skills Sharing Works &rarr;
             </Link>
           </div>
         </div>
       </section>
 
-      {/* The Risk Management Crisis Section */}
-      <section className="py-24 px-6 bg-slate-900/50">
+      {/* Layer 5: The Solution - Four Innovations */}
+      <section id="learn-more" className="py-24 px-6 bg-[rgb(28,28,28)]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-50 mb-4">
-              The Risk Management Crisis
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              The Solution
             </h2>
-            <p className="text-lg text-slate-400 max-w-3xl mx-auto">
-              Risk professionals are drowning in routine tasks while strategic threats evolve unchecked
+            <p className="text-secondary">
+              Four innovations, 30 years of risk expertise
             </p>
           </div>
 
-          {/* Column Headers */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-6">
-            <div className="bg-slate-800/50 rounded-t-2xl p-6 border border-red-900/30 border-b-0">
-              <h3 className="text-xl font-bold text-red-400 flex items-center gap-2">
-                <span className="text-2xl">❌</span> Where Most Banks Are Today
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* 1. Context Management */}
+            <Link
+              href="/platform/context-management"
+              className="group block bg-[rgb(22,22,22)] rounded-lg p-8 border border-[rgb(45,45,45)] hover:border-[rgb(60,60,60)] transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="text-4xl mb-6">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Context Management
               </h3>
-            </div>
-            <div className="bg-slate-800/50 rounded-t-2xl p-6 border border-emerald-900/30 border-b-0">
-              <h3 className="text-xl font-bold text-emerald-400 flex items-center gap-2">
-                <span className="text-2xl">✅</span> Where You Need to Be
+              <p className="text-secondary text-sm mb-4">
+                Risk Taxonomy + Context Graph for institutional memory
+              </p>
+              <span className="text-muted text-sm group-hover:text-secondary transition-colors">
+                Explore &rarr;
+              </span>
+            </Link>
+
+            {/* 2. Skills */}
+            <Link
+              href="/platform/skills"
+              className="group block bg-[rgb(22,22,22)] rounded-lg p-8 border border-[rgb(45,45,45)] hover:border-[rgb(60,60,60)] transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="text-4xl mb-6">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Skills
               </h3>
-            </div>
+              <p className="text-secondary text-sm mb-4">
+                100+ modular capabilities across 9 risk domains
+              </p>
+              <span className="text-muted text-sm group-hover:text-secondary transition-colors">
+                Explore &rarr;
+              </span>
+            </Link>
+
+            {/* 3. Patterns */}
+            <Link
+              href="/platform/patterns"
+              className="group block bg-[rgb(22,22,22)] rounded-lg p-8 border border-[rgb(45,45,45)] hover:border-[rgb(60,60,60)] transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="text-4xl mb-6">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Patterns
+              </h3>
+              <p className="text-secondary text-sm mb-4">
+                Composable workflows that learn and improve
+              </p>
+              <span className="text-muted text-sm group-hover:text-secondary transition-colors">
+                Explore &rarr;
+              </span>
+            </Link>
+
+            {/* 4. Goal Alignment */}
+            <Link
+              href="/platform/goal-alignment"
+              className="group block bg-[rgb(22,22,22)] rounded-lg p-8 border border-[rgb(45,45,45)] hover:border-[rgb(60,60,60)] transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="text-4xl mb-6">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">
+                Goal Alignment
+              </h3>
+              <p className="text-secondary text-sm mb-4">
+                AI agents aligned to your strategic objectives
+              </p>
+              <span className="text-muted text-sm group-hover:text-secondary transition-colors">
+                Explore &rarr;
+              </span>
+            </Link>
           </div>
 
-          {/* Paired Rows */}
-          <div className="max-w-5xl mx-auto space-y-4">
-            {/* Row 1 - Tick-box work */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-800/50 p-4 border-x border-red-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-red-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Routine &quot;tick-box&quot; work</strong> crowding out strategic thinking</span>
-              </div>
-              <div className="bg-slate-800/50 p-4 border-x border-emerald-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-emerald-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Strategic risk/return focus</strong>—AI handles the grunt work</span>
-              </div>
-            </div>
-
-            {/* Row 2 */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-800/50 p-4 border-x border-red-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-red-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Volumes of static reports</strong> generated daily, weekly, and monthly—most go unread</span>
-              </div>
-              <div className="bg-slate-800/50 p-4 border-x border-emerald-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-emerald-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Natural language queries</strong>—ask questions, get instant answers</span>
-              </div>
-            </div>
-
-            {/* Row 3 */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-800/50 p-4 border-x border-red-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-red-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Information scattered</strong> across the organisation without coherent structure</span>
-              </div>
-              <div className="bg-slate-800/50 p-4 border-x border-emerald-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-emerald-400 mt-1">•</span>
-                <span><strong className="text-slate-200">AI-powered knowledge platform</strong>—AI never tires of documenting, finds patterns, and structures information</span>
-              </div>
-            </div>
-
-            {/* Row 4 */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-800/50 p-4 border-x border-red-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-red-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Knowledge trapped in heads</strong>—walks out when people leave</span>
-              </div>
-              <div className="bg-slate-800/50 p-4 border-x border-emerald-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-emerald-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Captured, curated knowledge</strong> that stays and compounds</span>
-              </div>
-            </div>
-
-            {/* Row 5 */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-800/50 p-4 border-x border-red-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-red-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Undocumented processes</strong>—AI can&apos;t help what it can&apos;t see</span>
-              </div>
-              <div className="bg-slate-800/50 p-4 border-x border-emerald-900/30 flex items-start gap-3 text-slate-300">
-                <span className="text-emerald-400 mt-1">•</span>
-                <span><strong className="text-slate-200">AI-readable process blueprints</strong>—documented and versioned</span>
-              </div>
-            </div>
-
-            {/* Row 6 */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-800/50 p-4 border-x border-b border-red-900/30 rounded-b-2xl flex items-start gap-3 text-slate-300">
-                <span className="text-red-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Expensive consultants</strong> who take their knowledge with them</span>
-              </div>
-              <div className="bg-slate-800/50 p-4 border-x border-b border-emerald-900/30 rounded-b-2xl flex items-start gap-3 text-slate-300">
-                <span className="text-emerald-400 mt-1">•</span>
-                <span><strong className="text-slate-200">Shared best practices</strong>—community-driven improvement</span>
-              </div>
-            </div>
+          {/* Innovation Progression */}
+          <div className="mt-16 text-center">
+            <h3 className="text-xl font-bold text-white mb-4">
+              Context Management → Skills → Patterns → Goal Alignment
+            </h3>
+            <p className="text-secondary text-sm max-w-2xl mx-auto">
+              Context provides the foundation. Skills provide capabilities. Patterns orchestrate workflows. Goal Alignment ensures everything connects to strategic outcomes.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Three Innovations Section */}
-      <section id="learn-more" className="py-24 px-6 bg-slate-950">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="badge-ai mb-6 inline-block">The Risk Agents Solution</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-50 mb-4">
-              Three Foundational Innovations
-            </h2>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              Built on 30 years of risk expertise, delivered through AI
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Skills Framework */}
-            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift">
-              <div className="badge-ai mb-4">Innovation 1</div>
-              <h3 className="text-2xl font-bold text-slate-50 mb-3">
-                Skills Framework
-              </h3>
-              <p className="text-slate-300 mb-4">
-                100+ modular capabilities across 9 risk domains. Each skill does one thing exceptionally well. Skills combine to solve complex challenges.
-              </p>
-              <Link href="/platform/skills" className="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">
-                Explore Skills →
-              </Link>
-            </div>
-
-            {/* Fabrix Patterns */}
-            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift">
-              <div className="badge-risk mb-4">Innovation 2</div>
-              <h3 className="text-2xl font-bold text-slate-50 mb-3">
-                Fabrix Patterns
-              </h3>
-              <p className="text-slate-300 mb-4">
-                Composable workflows that track success and improve over time. Patterns evolve based on what works, creating institutional memory.
-              </p>
-              <Link href="/platform/patterns" className="text-amber-400 hover:text-amber-300 transition-colors text-sm font-medium">
-                Explore Patterns →
-              </Link>
-            </div>
-
-            {/* GTD Goal Alignment */}
-            <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 card-lift">
-              <div className="badge-success mb-4">Innovation 3</div>
-              <h3 className="text-2xl font-bold text-slate-50 mb-3">
-                GTD Goal Alignment
-              </h3>
-              <p className="text-slate-300 mb-4">
-                Every action traces to organizational goals and principles. From 50K ft vision down to ground-level tasks—all aligned.
-              </p>
-              <Link href="/platform/goal-alignment" className="text-emerald-400 hover:text-emerald-300 transition-colors text-sm font-medium">
-                Explore GTD →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Sharing Section */}
-      <section className="py-24 px-6 bg-slate-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      {/* Layer 4: Credibility - 15 seconds */}
+      <section className="py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-12 text-center">
             <div>
-              <span className="badge-success mb-6 inline-block">A New Model</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-50 mb-6">
-                Not Software You Buy—<br />
-                <span className="text-gradient-blue">A Community You Join</span>
-              </h2>
-              <p className="text-lg text-slate-300 mb-6">
-                Risk managers want to share best practices—they just lack time. Consultancies charge exorbitant fees to bring &quot;multi-bank experience&quot; to your door.
-              </p>
-              <p className="text-lg text-slate-300 mb-8">
-                <strong className="text-slate-200">What if we democratized that experience?</strong> Share the non-competitive parts (methodology, frameworks, templates) while keeping your proprietary data and parameters private.
-              </p>
-              <Link href="/skills-sharing" className="btn-primary inline-flex items-center gap-2">
-                Learn About Skills Sharing
-              </Link>
+              <p className="text-4xl md:text-5xl font-bold text-white mb-2">30+</p>
+              <p className="text-secondary">Years Risk Experience</p>
             </div>
-
-            {/* What Gets Shared vs What Stays Private */}
-            <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700">
-              <h3 className="text-lg font-bold text-slate-50 mb-6 text-center">
-                What Gets Shared vs What Stays Yours
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <div className="text-emerald-400 font-semibold text-sm mb-3 uppercase tracking-wide">Shared</div>
-                  <ul className="space-y-2 text-sm text-slate-300">
-                    <li>• Methodology frameworks</li>
-                    <li>• Regulatory interpretations</li>
-                    <li>• Data quality rules</li>
-                    <li>• Report templates</li>
-                    <li>• Integration patterns</li>
-                    <li>• Skills & Patterns</li>
-                  </ul>
-                </div>
-                <div>
-                  <div className="text-blue-400 font-semibold text-sm mb-3 uppercase tracking-wide">Yours</div>
-                  <ul className="space-y-2 text-sm text-slate-300">
-                    <li>• Model parameters</li>
-                    <li>• Thresholds & limits</li>
-                    <li>• Client data</li>
-                    <li>• Risk appetite</li>
-                    <li>• Competitive intel</li>
-                    <li>• Your context</li>
-                  </ul>
-                </div>
-              </div>
+            <div>
+              <p className="text-4xl md:text-5xl font-bold text-white mb-2">Global</p>
+              <p className="text-secondary">Banking Background</p>
+            </div>
+            <div>
+              <p className="text-4xl md:text-5xl font-bold text-white mb-2">100+</p>
+              <p className="text-secondary">AI-Powered Skills</p>
             </div>
           </div>
+
         </div>
       </section>
 
-      {/* Early Access Section */}
-      <section id="early-access" className="py-24 px-6 bg-slate-950">
-        <div className="max-w-2xl mx-auto text-center">
-          <span className="badge-risk mb-6 inline-block">Don&apos;t Get Left Behind</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-50 mb-6">
+      {/* Layer 5: Final CTA */}
+      <section id="early-access" className="py-24 px-6 bg-[rgb(28,28,28)]">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Join the Founding Members
           </h2>
-          <p className="text-lg text-slate-300 mb-4">
-            The gap between you and your competitors grows every day you wait. Be among the first to transform risk management.
-          </p>
-          <p className="text-slate-400 mb-8">
-            Early access members will help shape the platform, influence governance, and get a head start on the AI maturity journey.
+          <p className="text-secondary mb-8">
+            Shape the platform. Influence governance. Lead the transformation.
           </p>
           <EarlyAccessForm />
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 bg-slate-950 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto text-center text-slate-400 text-sm">
-          <p>© 2025 Risk Agents. Built by <a href="https://www.gavinslater.com" className="text-blue-400 hover:text-blue-300 transition-colors">Gavin Slater</a></p>
-          <p className="mt-2">30 Years of Chief Risk Officer Expertise, Delivered by AI</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

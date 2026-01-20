@@ -1,91 +1,139 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  // Handle scroll for sticky navigation transparency
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (isOpen && !target.closest('nav')) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [isOpen]);
+
+  const toggleDropdown = (name: string) => {
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-nav">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'glass-nav-scrolled'
+          : 'glass-nav'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold">
-              <span className="text-gradient-blue">Risk Agents</span>
-            </span>
+          {/* Home Button */}
+          <Link href="/" className="nav-link font-medium">
+            Home
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {/* Platform Dropdown */}
+            {/* Risk Agents (Platform) Dropdown */}
             <div className="relative group">
-              <button className="text-slate-300 hover:text-slate-50 transition-colors flex items-center gap-1">
-                Platform
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <button className="nav-link flex items-center gap-1">
+                Risk Agents
+                <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="bg-slate-800 rounded-xl border border-slate-700 shadow-lg py-2">
-                  <Link href="/platform" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
-                    Overview
+              <div className="dropdown-menu">
+                <div className="dropdown-content">
+                  {/* Story Arc Items */}
+                  <Link href="/risk-management-crisis" className="dropdown-item">
+                    The Risk Management Crisis
                   </Link>
-                  <Link href="/platform/skills" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
-                    Skills Framework
+                  <Link href="/ai-maturity-model" className="dropdown-item">
+                    AI Maturity Model
                   </Link>
-                  <Link href="/platform/patterns" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
-                    Fabrix Patterns
-                  </Link>
-                  <Link href="/platform/goal-alignment" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
-                    GTD Goal Alignment
-                  </Link>
-                  <Link href="/platform/context-engineering" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
-                    Context Engineering
-                  </Link>
-                  <Link href="/platform/reporting" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
-                    Natural Language Reporting
-                  </Link>
-                  <Link href="/platform/human-in-the-loop" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
+                  <Link href="/platform/human-in-the-loop" className="dropdown-item">
                     Human-in-the-Loop
+                  </Link>
+                  <Link href="/skills-sharing" className="dropdown-item">
+                    Why Share Skills
+                  </Link>
+                  <Link href="/skills-sharing/how-it-works" className="dropdown-item">
+                    How Skills Sharing Works
+                  </Link>
+                  {/* Four Innovations */}
+                  <div className="dropdown-divider"></div>
+                  <Link href="/platform/context-management" className="dropdown-item">
+                    Context Management
+                  </Link>
+                  <Link href="/platform/skills" className="dropdown-item">
+                    Skills
+                  </Link>
+                  <Link href="/platform/patterns" className="dropdown-item">
+                    Patterns
+                  </Link>
+                  <Link href="/platform/goal-alignment" className="dropdown-item">
+                    Goal Alignment
+                  </Link>
+                  {/* Platform Overview */}
+                  <div className="dropdown-divider"></div>
+                  <Link href="/platform" className="dropdown-item">
+                    Platform Overview
                   </Link>
                 </div>
               </div>
             </div>
 
-            {/* Skills Sharing Dropdown - NEW */}
+            {/* Members Dropdown */}
             <div className="relative group">
-              <button className="text-slate-300 hover:text-slate-50 transition-colors flex items-center gap-1">
-                Skills Sharing
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <button className="nav-link flex items-center gap-1">
+                Members
+                <svg className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="bg-slate-800 rounded-xl border border-slate-700 shadow-lg py-2">
-                  <Link href="/skills-sharing" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
-                    Why Share?
+              <div className="dropdown-menu">
+                <div className="dropdown-content">
+                  <Link href="/members/banks" className="dropdown-item">
+                    Banks
                   </Link>
-                  <Link href="/skills-sharing/how-it-works" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
-                    How It Works
+                  <Link href="/members/investment-managers" className="dropdown-item">
+                    Investment Managers
                   </Link>
-                  <Link href="/skills-sharing/founding-members" className="block px-4 py-2 text-slate-300 hover:text-slate-50 hover:bg-slate-700 transition-colors">
+                  <Link href="/members/insurance" className="dropdown-item">
+                    Insurance Companies
+                  </Link>
+                  <Link href="/members/founding" className="dropdown-item">
                     Founding Members
                   </Link>
                 </div>
               </div>
             </div>
 
-            <Link href="/domains" className="text-slate-300 hover:text-slate-50 transition-colors">
-              Risk Domains
+            {/* How We Think */}
+            <Link href="/how-we-think" className="nav-link">
+              How We Think
             </Link>
 
-            <Link href="/about/philosophy" className="text-slate-300 hover:text-slate-50 transition-colors">
-              Design Philosophy
-            </Link>
-
-            <Link href="/about" className="text-slate-300 hover:text-slate-50 transition-colors">
+            {/* About */}
+            <Link href="/about" className="nav-link">
               About
             </Link>
           </div>
@@ -93,13 +141,14 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-slate-300 hover:text-slate-50"
+            className="md:hidden nav-link p-2"
+            aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -107,61 +156,109 @@ export default function Navigation() {
       </div>
 
       {/* Mobile menu */}
-      {isOpen && (
-        <div className="md:hidden bg-slate-800 border-t border-slate-700">
-          <div className="px-6 py-4 space-y-3">
-            {/* Platform Section */}
-            <div className="text-slate-400 text-sm font-semibold uppercase tracking-wide pt-2">Platform</div>
-            <Link href="/platform" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              Overview
-            </Link>
-            <Link href="/platform/skills" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              Skills Framework
-            </Link>
-            <Link href="/platform/patterns" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              Fabrix Patterns
-            </Link>
-            <Link href="/platform/goal-alignment" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              GTD Goal Alignment
-            </Link>
-            <Link href="/platform/context-engineering" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              Context Engineering
-            </Link>
-            <Link href="/platform/reporting" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              Natural Language Reporting
-            </Link>
-            <Link href="/platform/human-in-the-loop" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              Human-in-the-Loop
-            </Link>
-
-            {/* Skills Sharing Section */}
-            <div className="text-slate-400 text-sm font-semibold uppercase tracking-wide pt-4">Skills Sharing</div>
-            <Link href="/skills-sharing" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              Why Share?
-            </Link>
-            <Link href="/skills-sharing/how-it-works" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              How It Works
-            </Link>
-            <Link href="/skills-sharing/founding-members" className="block text-slate-300 hover:text-slate-50 transition-colors py-2 pl-4">
-              Founding Members
-            </Link>
-
-            {/* Other Links */}
-            <div className="border-t border-slate-700 pt-4 mt-4">
-              <Link href="/domains" className="block text-slate-300 hover:text-slate-50 transition-colors py-2">
-                Risk Domains
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ${
+          isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <div className="mobile-menu">
+          {/* Risk Agents Section */}
+          <div className="mobile-menu-section">
+            <button
+              onClick={() => toggleDropdown('platform')}
+              className="mobile-menu-header"
+            >
+              Risk Agents
+              <svg
+                className={`w-4 h-4 transition-transform duration-200 ${openDropdown === 'platform' ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className={`mobile-dropdown ${openDropdown === 'platform' ? 'open' : ''}`}>
+              {/* Story Arc Items */}
+              <Link href="/risk-management-crisis" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                The Risk Management Crisis
               </Link>
-              <Link href="/about" className="block text-slate-300 hover:text-slate-50 transition-colors py-2">
-                About
+              <Link href="/ai-maturity-model" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                AI Maturity Model
               </Link>
-              <Link href="/about/philosophy" className="block text-slate-300 hover:text-slate-50 transition-colors py-2">
-                Design Philosophy
+              <Link href="/platform/human-in-the-loop" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Human-in-the-Loop
+              </Link>
+              <Link href="/skills-sharing" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Why Share Skills
+              </Link>
+              <Link href="/skills-sharing/how-it-works" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                How Skills Sharing Works
+              </Link>
+              {/* Four Innovations */}
+              <div className="mobile-dropdown-divider"></div>
+              <Link href="/platform/context-management" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Context Management
+              </Link>
+              <Link href="/platform/skills" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Skills
+              </Link>
+              <Link href="/platform/patterns" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Patterns
+              </Link>
+              <Link href="/platform/goal-alignment" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Goal Alignment
+              </Link>
+              {/* Platform Overview */}
+              <div className="mobile-dropdown-divider"></div>
+              <Link href="/platform" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Platform Overview
               </Link>
             </div>
-
           </div>
+
+          {/* Members Section */}
+          <div className="mobile-menu-section">
+            <button
+              onClick={() => toggleDropdown('members')}
+              className="mobile-menu-header"
+            >
+              Members
+              <svg
+                className={`w-4 h-4 transition-transform duration-200 ${openDropdown === 'members' ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className={`mobile-dropdown ${openDropdown === 'members' ? 'open' : ''}`}>
+              <Link href="/members/banks" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Banks
+              </Link>
+              <Link href="/members/investment-managers" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Investment Managers
+              </Link>
+              <Link href="/members/insurance" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Insurance Companies
+              </Link>
+              <Link href="/members/founding" className="mobile-dropdown-item" onClick={() => setIsOpen(false)}>
+                Founding Members
+              </Link>
+            </div>
+          </div>
+
+          {/* Other Links */}
+          <div className="mobile-menu-divider"></div>
+          <Link href="/how-we-think" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
+            How We Think
+          </Link>
+          <Link href="/about" className="mobile-menu-link" onClick={() => setIsOpen(false)}>
+            About
+          </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
