@@ -25,6 +25,33 @@ export default function InvestmentManagers() {
         </div>
       </section>
 
+      {/* Platform Adaptation Notice */}
+      <section className="px-6 pb-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-[rgb(45,45,45)] rounded-lg p-6 border border-[rgb(60,60,60)]">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[rgb(60,60,60)] flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-white mb-2">Seeking Founding Members</h3>
+                <p className="text-secondary text-sm mb-3">
+                  Our current baseline platform has been developed with a focus on banking risk management. While the core architecture—context management, skills, patterns, and goal alignment—applies equally to investment management, we are actively seeking <strong className="text-white">founding members from the asset management industry</strong> to help adapt and extend the platform for investment-specific use cases.
+                </p>
+                <p className="text-secondary text-sm">
+                  Founding members will shape which skills we prioritise, contribute domain expertise, and benefit from early access and preferential terms.{' '}
+                  <Link href="/members/founding" className="text-white hover:underline">
+                    Learn more about Founding Membership &rarr;
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Investment Managers */}
       <section className="py-16 px-6 bg-[rgb(28,28,28)]">
         <div className="max-w-6xl mx-auto">
